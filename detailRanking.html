@@ -1,0 +1,2659 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head><meta charset="utf-8">
+        <title>ランキング詳細</title>
+        <meta http-equiv="content-type" content = "text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    	<link rel="stylesheet" type="text/css" media="screen,print" href="css/detailRanking.css">
+    </head>
+
+    <div class="inline-block">
+        <a href="index.html" class="btn btn-gradient"><span>トップ</span></a>
+    </div>
+    <div class="inline-block">
+        <br>
+    </div>
+    <div class="inline-block">
+        <a href="ranking.html" class="btn btn-radius-solid">ランキングに戻る<i class="fas fa-angle-right fa-position-right"></i></a>
+    </div>
+    
+    
+    
+    <h2>ランキング詳細</h2>
+            
+            <div class="ranking">
+                <table border="1">
+                    <tr><th>順位</th>
+                        <th width = "5%">点数</th>
+                        <th>日時</th>
+                        <th width = "5%">プレイ時間</th>
+                        <th>消去ライン数</th>
+                        <th>レベル</th>
+                        <th>最大コンボ</th>
+                        <th>Single</th>
+                        <th>Double</th>
+                        <th>Triple</th>
+                        <th>Tetris</th>
+                        <th>Perfect Clear</th>
+                        <th>T-Spin Single Mini</th>
+                        <th>T-Spin Double Mini</th>
+                        <th>T-Spin Mini合計</th>
+                        <th>T-Spin Single</th>
+                        <th>T-Spin Double</th>
+                        <th>T-Spin Triple</th>
+                        <th>T-Spin合計</th>
+                        <th>Back-To-Back</th>
+                        <th>ミノ回転回数</th>
+                        <th>ミノ落下距離</th>
+                        <th>HOLD回数</th>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-1"></td>
+                        <td id="printScore-1"></td>
+                        <td id="printDate-1"></td>
+                        <td id="printTime-1"></td>
+                        <td id="printClearLine-1"></td>
+                        <td id="printGameLevel-1"></td>
+                        <td id="printMaxCombo-1"></td>
+                        <td id="printSingle-1"></td>
+                        <td id="printDouble-1"></td>
+                        <td id="printTriple-1"></td>
+                        <td id="printTetris-1"></td>
+                        <td id="printPerfectClear-1"></td>    
+                        <td id="printTSpinSingleMini-1"></td>
+                        <td id="printTSpinDoubleMini-1"></td>
+                        <td id="printTSpinMini-1"></td>
+                        <td id="printTSpinSingle-1"></td>
+                        <td id="printTSpinDouble-1"></td>
+                        <td id="printTSpinTriple-1"></td>
+                        <td id="printTSpin-1"></td>
+                        <td id="printBackToBack-1"></td>
+                        <td id="printRotate-1"></td>
+                        <td id="printFallDistance-1"></td>
+                        <td id="printHold-1"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-2"></td>
+                        <td id="printScore-2"></td>
+                        <td id="printDate-2"></td>
+                        <td id="printTime-2"></td>
+                        <td id="printClearLine-2"></td>
+                        <td id="printGameLevel-2"></td>
+                        <td id="printMaxCombo-2"></td>
+                        <td id="printSingle-2"></td>
+                        <td id="printDouble-2"></td>
+                        <td id="printTriple-2"></td>
+                        <td id="printTetris-2"></td>
+                        <td id="printPerfectClear-2"></td>    
+                        <td id="printTSpinSingleMini-2"></td>
+                        <td id="printTSpinDoubleMini-2"></td>
+                        <td id="printTSpinMini-2"></td>
+                        <td id="printTSpinSingle-2"></td>
+                        <td id="printTSpinDouble-2"></td>
+                        <td id="printTSpinTriple-2"></td>
+                        <td id="printTSpin-2"></td>
+                        <td id="printBackToBack-2"></td>
+                        <td id="printRotate-2"></td>
+                        <td id="printFallDistance-2"></td>
+                        <td id="printHold-2"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-3"></td>
+                        <td id="printScore-3"></td>
+                        <td id="printDate-3"></td>
+                        <td id="printTime-3"></td>
+                        <td id="printClearLine-3"></td>
+                        <td id="printGameLevel-3"></td>
+                        <td id="printMaxCombo-3"></td>
+                        <td id="printSingle-3"></td>
+                        <td id="printDouble-3"></td>
+                        <td id="printTriple-3"></td>
+                        <td id="printTetris-3"></td>
+                        <td id="printPerfectClear-3"></td>    
+                        <td id="printTSpinSingleMini-3"></td>
+                        <td id="printTSpinDoubleMini-3"></td>
+                        <td id="printTSpinMini-3"></td>
+                        <td id="printTSpinSingle-3"></td>
+                        <td id="printTSpinDouble-3"></td>
+                        <td id="printTSpinTriple-3"></td>
+                        <td id="printTSpin-3"></td>
+                        <td id="printBackToBack-3"></td>
+                        <td id="printRotate-3"></td>
+                        <td id="printFallDistance-3"></td>
+                        <td id="printHold-3"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-4"></td>
+                        <td id="printScore-4"></td>
+                        <td id="printDate-4"></td>
+                        <td id="printTime-4"></td>
+                        <td id="printClearLine-4"></td>
+                        <td id="printGameLevel-4"></td>
+                        <td id="printMaxCombo-4"></td>
+                        <td id="printSingle-4"></td>
+                        <td id="printDouble-4"></td>
+                        <td id="printTriple-4"></td>
+                        <td id="printTetris-4"></td>
+                        <td id="printPerfectClear-4"></td>    
+                        <td id="printTSpinSingleMini-4"></td>
+                        <td id="printTSpinDoubleMini-4"></td>
+                        <td id="printTSpinMini-4"></td>
+                        <td id="printTSpinSingle-4"></td>
+                        <td id="printTSpinDouble-4"></td>
+                        <td id="printTSpinTriple-4"></td>
+                        <td id="printTSpin-4"></td>
+                        <td id="printBackToBack-4"></td>
+                        <td id="printRotate-4"></td>
+                        <td id="printFallDistance-4"></td>
+                        <td id="printHold-4"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-5"></td>
+                        <td id="printScore-5"></td>
+                        <td id="printDate-5"></td>
+                        <td id="printTime-5"></td>
+                        <td id="printClearLine-5"></td>
+                        <td id="printGameLevel-5"></td>
+                        <td id="printMaxCombo-5"></td>
+                        <td id="printSingle-5"></td>
+                        <td id="printDouble-5"></td>
+                        <td id="printTriple-5"></td>
+                        <td id="printTetris-5"></td>
+                        <td id="printPerfectClear-5"></td>    
+                        <td id="printTSpinSingleMini-5"></td>
+                        <td id="printTSpinDoubleMini-5"></td>
+                        <td id="printTSpinMini-5"></td>
+                        <td id="printTSpinSingle-5"></td>
+                        <td id="printTSpinDouble-5"></td>
+                        <td id="printTSpinTriple-5"></td>
+                        <td id="printTSpin-5"></td>
+                        <td id="printBackToBack-5"></td>
+                        <td id="printRotate-5"></td>
+                        <td id="printFallDistance-5"></td>
+                        <td id="printHold-5"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-6"></td>
+                        <td id="printScore-6"></td>
+                        <td id="printDate-6"></td>
+                        <td id="printTime-6"></td>
+                        <td id="printClearLine-6"></td>
+                        <td id="printGameLevel-6"></td>
+                        <td id="printMaxCombo-6"></td>
+                        <td id="printSingle-6"></td>
+                        <td id="printDouble-6"></td>
+                        <td id="printTriple-6"></td>
+                        <td id="printTetris-6"></td>
+                        <td id="printPerfectClear-6"></td>    
+                        <td id="printTSpinSingleMini-6"></td>
+                        <td id="printTSpinDoubleMini-6"></td>
+                        <td id="printTSpinMini-6"></td>
+                        <td id="printTSpinSingle-6"></td>
+                        <td id="printTSpinDouble-6"></td>
+                        <td id="printTSpinTriple-6"></td>
+                        <td id="printTSpin-6"></td>
+                        <td id="printBackToBack-6"></td>
+                        <td id="printRotate-6"></td>
+                        <td id="printFallDistance-6"></td>
+                        <td id="printHold-6"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-7"></td>
+                        <td id="printScore-7"></td>
+                        <td id="printDate-7"></td>
+                        <td id="printTime-7"></td>
+                        <td id="printClearLine-7"></td>
+                        <td id="printGameLevel-7"></td>
+                        <td id="printMaxCombo-7"></td>
+                        <td id="printSingle-7"></td>
+                        <td id="printDouble-7"></td>
+                        <td id="printTriple-7"></td>
+                        <td id="printTetris-7"></td>
+                        <td id="printPerfectClear-7"></td>    
+                        <td id="printTSpinSingleMini-7"></td>
+                        <td id="printTSpinDoubleMini-7"></td>
+                        <td id="printTSpinMini-7"></td>
+                        <td id="printTSpinSingle-7"></td>
+                        <td id="printTSpinDouble-7"></td>
+                        <td id="printTSpinTriple-7"></td>
+                        <td id="printTSpin-7"></td>
+                        <td id="printBackToBack-7"></td>
+                        <td id="printRotate-7"></td>
+                        <td id="printFallDistance-7"></td>
+                        <td id="printHold-7"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-8"></td>
+                        <td id="printScore-8"></td>
+                        <td id="printDate-8"></td>
+                        <td id="printTime-8"></td>
+                        <td id="printClearLine-8"></td>
+                        <td id="printGameLevel-8"></td>
+                        <td id="printMaxCombo-8"></td>
+                        <td id="printSingle-8"></td>
+                        <td id="printDouble-8"></td>
+                        <td id="printTriple-8"></td>
+                        <td id="printTetris-8"></td>
+                        <td id="printPerfectClear-8"></td>    
+                        <td id="printTSpinSingleMini-8"></td>
+                        <td id="printTSpinDoubleMini-8"></td>
+                        <td id="printTSpinMini-8"></td>
+                        <td id="printTSpinSingle-8"></td>
+                        <td id="printTSpinDouble-8"></td>
+                        <td id="printTSpinTriple-8"></td>
+                        <td id="printTSpin-8"></td>
+                        <td id="printBackToBack-8"></td>
+                        <td id="printRotate-8"></td>
+                        <td id="printFallDistance-8"></td>
+                        <td id="printHold-8"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-9"></td>
+                        <td id="printScore-9"></td>
+                        <td id="printDate-9"></td>
+                        <td id="printTime-9"></td>
+                        <td id="printClearLine-9"></td>
+                        <td id="printGameLevel-9"></td>
+                        <td id="printMaxCombo-9"></td>
+                        <td id="printSingle-9"></td>
+                        <td id="printDouble-9"></td>
+                        <td id="printTriple-9"></td>
+                        <td id="printTetris-9"></td>
+                        <td id="printPerfectClear-9"></td>    
+                        <td id="printTSpinSingleMini-9"></td>
+                        <td id="printTSpinDoubleMini-9"></td>
+                        <td id="printTSpinMini-9"></td>
+                        <td id="printTSpinSingle-9"></td>
+                        <td id="printTSpinDouble-9"></td>
+                        <td id="printTSpinTriple-9"></td>
+                        <td id="printTSpin-9"></td>
+                        <td id="printBackToBack-9"></td>
+                        <td id="printRotate-9"></td>
+                        <td id="printFallDistance-9"></td>
+                        <td id="printHold-9"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-10"></td>
+                        <td id="printScore-10"></td>
+                        <td id="printDate-10"></td>
+                        <td id="printTime-10"></td>
+                        <td id="printClearLine-10"></td>
+                        <td id="printGameLevel-10"></td>
+                        <td id="printMaxCombo-10"></td>
+                        <td id="printSingle-10"></td>
+                        <td id="printDouble-10"></td>
+                        <td id="printTriple-10"></td>
+                        <td id="printTetris-10"></td>
+                        <td id="printPerfectClear-10"></td>    
+                        <td id="printTSpinSingleMini-10"></td>
+                        <td id="printTSpinDoubleMini-10"></td>
+                        <td id="printTSpinMini-10"></td>
+                        <td id="printTSpinSingle-10"></td>
+                        <td id="printTSpinDouble-10"></td>
+                        <td id="printTSpinTriple-10"></td>
+                        <td id="printTSpin-10"></td>
+                        <td id="printBackToBack-10"></td>
+                        <td id="printRotate-10"></td>
+                        <td id="printFallDistance-10"></td>
+                        <td id="printHold-10"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-11"></td>
+                        <td id="printScore-11"></td>
+                        <td id="printDate-11"></td>
+                        <td id="printTime-11"></td>
+                        <td id="printClearLine-11"></td>
+                        <td id="printGameLevel-11"></td>
+                        <td id="printMaxCombo-11"></td>
+                        <td id="printSingle-11"></td>
+                        <td id="printDouble-11"></td>
+                        <td id="printTriple-11"></td>
+                        <td id="printTetris-11"></td>
+                        <td id="printPerfectClear-11"></td>    
+                        <td id="printTSpinSingleMini-11"></td>
+                        <td id="printTSpinDoubleMini-11"></td>
+                        <td id="printTSpinMini-11"></td>
+                        <td id="printTSpinSingle-11"></td>
+                        <td id="printTSpinDouble-11"></td>
+                        <td id="printTSpinTriple-11"></td>
+                        <td id="printTSpin-11"></td>
+                        <td id="printBackToBack-11"></td>
+                        <td id="printRotate-11"></td>
+                        <td id="printFallDistance-11"></td>
+                        <td id="printHold-11"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-12"></td>
+                        <td id="printScore-12"></td>
+                        <td id="printDate-12"></td>
+                        <td id="printTime-12"></td>
+                        <td id="printClearLine-12"></td>
+                        <td id="printGameLevel-12"></td>
+                        <td id="printMaxCombo-12"></td>
+                        <td id="printSingle-12"></td>
+                        <td id="printDouble-12"></td>
+                        <td id="printTriple-12"></td>
+                        <td id="printTetris-12"></td>
+                        <td id="printPerfectClear-12"></td>    
+                        <td id="printTSpinSingleMini-12"></td>
+                        <td id="printTSpinDoubleMini-12"></td>
+                        <td id="printTSpinMini-12"></td>
+                        <td id="printTSpinSingle-12"></td>
+                        <td id="printTSpinDouble-12"></td>
+                        <td id="printTSpinTriple-12"></td>
+                        <td id="printTSpin-12"></td>
+                        <td id="printBackToBack-12"></td>
+                        <td id="printRotate-12"></td>
+                        <td id="printFallDistance-12"></td>
+                        <td id="printHold-12"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-13"></td>
+                        <td id="printScore-13"></td>
+                        <td id="printDate-13"></td>
+                        <td id="printTime-13"></td>
+                        <td id="printClearLine-13"></td>
+                        <td id="printGameLevel-13"></td>
+                        <td id="printMaxCombo-13"></td>
+                        <td id="printSingle-13"></td>
+                        <td id="printDouble-13"></td>
+                        <td id="printTriple-13"></td>
+                        <td id="printTetris-13"></td>
+                        <td id="printPerfectClear-13"></td>    
+                        <td id="printTSpinSingleMini-13"></td>
+                        <td id="printTSpinDoubleMini-13"></td>
+                        <td id="printTSpinMini-13"></td>
+                        <td id="printTSpinSingle-13"></td>
+                        <td id="printTSpinDouble-13"></td>
+                        <td id="printTSpinTriple-13"></td>
+                        <td id="printTSpin-13"></td>
+                        <td id="printBackToBack-13"></td>
+                        <td id="printRotate-13"></td>
+                        <td id="printFallDistance-13"></td>
+                        <td id="printHold-13"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-14"></td>
+                        <td id="printScore-14"></td>
+                        <td id="printDate-14"></td>
+                        <td id="printTime-14"></td>
+                        <td id="printClearLine-14"></td>
+                        <td id="printGameLevel-14"></td>
+                        <td id="printMaxCombo-14"></td>
+                        <td id="printSingle-14"></td>
+                        <td id="printDouble-14"></td>
+                        <td id="printTriple-14"></td>
+                        <td id="printTetris-14"></td>
+                        <td id="printPerfectClear-14"></td>    
+                        <td id="printTSpinSingleMini-14"></td>
+                        <td id="printTSpinDoubleMini-14"></td>
+                        <td id="printTSpinMini-14"></td>
+                        <td id="printTSpinSingle-14"></td>
+                        <td id="printTSpinDouble-14"></td>
+                        <td id="printTSpinTriple-14"></td>
+                        <td id="printTSpin-14"></td>
+                        <td id="printBackToBack-14"></td>
+                        <td id="printRotate-14"></td>
+                        <td id="printFallDistance-14"></td>
+                        <td id="printHold-14"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-15"></td>
+                        <td id="printScore-15"></td>
+                        <td id="printDate-15"></td>
+                        <td id="printTime-15"></td>
+                        <td id="printClearLine-15"></td>
+                        <td id="printGameLevel-15"></td>
+                        <td id="printMaxCombo-15"></td>
+                        <td id="printSingle-15"></td>
+                        <td id="printDouble-15"></td>
+                        <td id="printTriple-15"></td>
+                        <td id="printTetris-15"></td>
+                        <td id="printPerfectClear-15"></td>    
+                        <td id="printTSpinSingleMini-15"></td>
+                        <td id="printTSpinDoubleMini-15"></td>
+                        <td id="printTSpinMini-15"></td>
+                        <td id="printTSpinSingle-15"></td>
+                        <td id="printTSpinDouble-15"></td>
+                        <td id="printTSpinTriple-15"></td>
+                        <td id="printTSpin-15"></td>
+                        <td id="printBackToBack-15"></td>
+                        <td id="printRotate-15"></td>
+                        <td id="printFallDistance-15"></td>
+                        <td id="printHold-15"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-16"></td>
+                        <td id="printScore-16"></td>
+                        <td id="printDate-16"></td>
+                        <td id="printTime-16"></td>
+                        <td id="printClearLine-16"></td>
+                        <td id="printGameLevel-16"></td>
+                        <td id="printMaxCombo-16"></td>
+                        <td id="printSingle-16"></td>
+                        <td id="printDouble-16"></td>
+                        <td id="printTriple-16"></td>
+                        <td id="printTetris-16"></td>
+                        <td id="printPerfectClear-16"></td>    
+                        <td id="printTSpinSingleMini-16"></td>
+                        <td id="printTSpinDoubleMini-16"></td>
+                        <td id="printTSpinMini-16"></td>
+                        <td id="printTSpinSingle-16"></td>
+                        <td id="printTSpinDouble-16"></td>
+                        <td id="printTSpinTriple-16"></td>
+                        <td id="printTSpin-16"></td>
+                        <td id="printBackToBack-16"></td>
+                        <td id="printRotate-16"></td>
+                        <td id="printFallDistance-16"></td>
+                        <td id="printHold-16"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-17"></td>
+                        <td id="printScore-17"></td>
+                        <td id="printDate-17"></td>
+                        <td id="printTime-17"></td>
+                        <td id="printClearLine-17"></td>
+                        <td id="printGameLevel-17"></td>
+                        <td id="printMaxCombo-17"></td>
+                        <td id="printSingle-17"></td>
+                        <td id="printDouble-17"></td>
+                        <td id="printTriple-17"></td>
+                        <td id="printTetris-17"></td>
+                        <td id="printPerfectClear-17"></td>    
+                        <td id="printTSpinSingleMini-17"></td>
+                        <td id="printTSpinDoubleMini-17"></td>
+                        <td id="printTSpinMini-17"></td>
+                        <td id="printTSpinSingle-17"></td>
+                        <td id="printTSpinDouble-17"></td>
+                        <td id="printTSpinTriple-17"></td>
+                        <td id="printTSpin-17"></td>
+                        <td id="printBackToBack-17"></td>
+                        <td id="printRotate-17"></td>
+                        <td id="printFallDistance-17"></td>
+                        <td id="printHold-17"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-18"></td>
+                        <td id="printScore-18"></td>
+                        <td id="printDate-18"></td>
+                        <td id="printTime-18"></td>
+                        <td id="printClearLine-18"></td>
+                        <td id="printGameLevel-18"></td>
+                        <td id="printMaxCombo-18"></td>
+                        <td id="printSingle-18"></td>
+                        <td id="printDouble-18"></td>
+                        <td id="printTriple-18"></td>
+                        <td id="printTetris-18"></td>
+                        <td id="printPerfectClear-18"></td>    
+                        <td id="printTSpinSingleMini-18"></td>
+                        <td id="printTSpinDoubleMini-18"></td>
+                        <td id="printTSpinMini-18"></td>
+                        <td id="printTSpinSingle-18"></td>
+                        <td id="printTSpinDouble-18"></td>
+                        <td id="printTSpinTriple-18"></td>
+                        <td id="printTSpin-18"></td>
+                        <td id="printBackToBack-18"></td>
+                        <td id="printRotate-18"></td>
+                        <td id="printFallDistance-18"></td>
+                        <td id="printHold-18"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-19"></td>
+                        <td id="printScore-19"></td>
+                        <td id="printDate-19"></td>
+                        <td id="printTime-19"></td>
+                        <td id="printClearLine-19"></td>
+                        <td id="printGameLevel-19"></td>
+                        <td id="printMaxCombo-19"></td>
+                        <td id="printSingle-19"></td>
+                        <td id="printDouble-19"></td>
+                        <td id="printTriple-19"></td>
+                        <td id="printTetris-19"></td>
+                        <td id="printPerfectClear-19"></td>    
+                        <td id="printTSpinSingleMini-19"></td>
+                        <td id="printTSpinDoubleMini-19"></td>
+                        <td id="printTSpinMini-19"></td>
+                        <td id="printTSpinSingle-19"></td>
+                        <td id="printTSpinDouble-19"></td>
+                        <td id="printTSpinTriple-19"></td>
+                        <td id="printTSpin-19"></td>
+                        <td id="printBackToBack-19"></td>
+                        <td id="printRotate-19"></td>
+                        <td id="printFallDistance-19"></td>
+                        <td id="printHold-19"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-20"></td>
+                        <td id="printScore-20"></td>
+                        <td id="printDate-20"></td>
+                        <td id="printTime-20"></td>
+                        <td id="printClearLine-20"></td>
+                        <td id="printGameLevel-20"></td>
+                        <td id="printMaxCombo-20"></td>
+                        <td id="printSingle-20"></td>
+                        <td id="printDouble-20"></td>
+                        <td id="printTriple-20"></td>
+                        <td id="printTetris-20"></td>
+                        <td id="printPerfectClear-20"></td>    
+                        <td id="printTSpinSingleMini-20"></td>
+                        <td id="printTSpinDoubleMini-20"></td>
+                        <td id="printTSpinMini-20"></td>
+                        <td id="printTSpinSingle-20"></td>
+                        <td id="printTSpinDouble-20"></td>
+                        <td id="printTSpinTriple-20"></td>
+                        <td id="printTSpin-20"></td>
+                        <td id="printBackToBack-20"></td>
+                        <td id="printRotate-20"></td>
+                        <td id="printFallDistance-20"></td>
+                        <td id="printHold-20"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-21"></td>
+                        <td id="printScore-21"></td>
+                        <td id="printDate-21"></td>
+                        <td id="printTime-21"></td>
+                        <td id="printClearLine-21"></td>
+                        <td id="printGameLevel-21"></td>
+                        <td id="printMaxCombo-21"></td>
+                        <td id="printSingle-21"></td>
+                        <td id="printDouble-21"></td>
+                        <td id="printTriple-21"></td>
+                        <td id="printTetris-21"></td>
+                        <td id="printPerfectClear-21"></td>    
+                        <td id="printTSpinSingleMini-21"></td>
+                        <td id="printTSpinDoubleMini-21"></td>
+                        <td id="printTSpinMini-21"></td>
+                        <td id="printTSpinSingle-21"></td>
+                        <td id="printTSpinDouble-21"></td>
+                        <td id="printTSpinTriple-21"></td>
+                        <td id="printTSpin-21"></td>
+                        <td id="printBackToBack-21"></td>
+                        <td id="printRotate-21"></td>
+                        <td id="printFallDistance-21"></td>
+                        <td id="printHold-21"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-22"></td>
+                        <td id="printScore-22"></td>
+                        <td id="printDate-22"></td>
+                        <td id="printTime-22"></td>
+                        <td id="printClearLine-22"></td>
+                        <td id="printGameLevel-22"></td>
+                        <td id="printMaxCombo-22"></td>
+                        <td id="printSingle-22"></td>
+                        <td id="printDouble-22"></td>
+                        <td id="printTriple-22"></td>
+                        <td id="printTetris-22"></td>
+                        <td id="printPerfectClear-22"></td>    
+                        <td id="printTSpinSingleMini-22"></td>
+                        <td id="printTSpinDoubleMini-22"></td>
+                        <td id="printTSpinMini-22"></td>
+                        <td id="printTSpinSingle-22"></td>
+                        <td id="printTSpinDouble-22"></td>
+                        <td id="printTSpinTriple-22"></td>
+                        <td id="printTSpin-22"></td>
+                        <td id="printBackToBack-22"></td>
+                        <td id="printRotate-22"></td>
+                        <td id="printFallDistance-22"></td>
+                        <td id="printHold-22"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-23"></td>
+                        <td id="printScore-23"></td>
+                        <td id="printDate-23"></td>
+                        <td id="printTime-23"></td>
+                        <td id="printClearLine-23"></td>
+                        <td id="printGameLevel-23"></td>
+                        <td id="printMaxCombo-23"></td>
+                        <td id="printSingle-23"></td>
+                        <td id="printDouble-23"></td>
+                        <td id="printTriple-23"></td>
+                        <td id="printTetris-23"></td>
+                        <td id="printPerfectClear-23"></td>    
+                        <td id="printTSpinSingleMini-23"></td>
+                        <td id="printTSpinDoubleMini-23"></td>
+                        <td id="printTSpinMini-23"></td>
+                        <td id="printTSpinSingle-23"></td>
+                        <td id="printTSpinDouble-23"></td>
+                        <td id="printTSpinTriple-23"></td>
+                        <td id="printTSpin-23"></td>
+                        <td id="printBackToBack-23"></td>
+                        <td id="printRotate-23"></td>
+                        <td id="printFallDistance-23"></td>
+                        <td id="printHold-23"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-24"></td>
+                        <td id="printScore-24"></td>
+                        <td id="printDate-24"></td>
+                        <td id="printTime-24"></td>
+                        <td id="printClearLine-24"></td>
+                        <td id="printGameLevel-24"></td>
+                        <td id="printMaxCombo-24"></td>
+                        <td id="printSingle-24"></td>
+                        <td id="printDouble-24"></td>
+                        <td id="printTriple-24"></td>
+                        <td id="printTetris-24"></td>
+                        <td id="printPerfectClear-24"></td>    
+                        <td id="printTSpinSingleMini-24"></td>
+                        <td id="printTSpinDoubleMini-24"></td>
+                        <td id="printTSpinMini-24"></td>
+                        <td id="printTSpinSingle-24"></td>
+                        <td id="printTSpinDouble-24"></td>
+                        <td id="printTSpinTriple-24"></td>
+                        <td id="printTSpin-24"></td>
+                        <td id="printBackToBack-24"></td>
+                        <td id="printRotate-24"></td>
+                        <td id="printFallDistance-24"></td>
+                        <td id="printHold-24"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-25"></td>
+                        <td id="printScore-25"></td>
+                        <td id="printDate-25"></td>
+                        <td id="printTime-25"></td>
+                        <td id="printClearLine-25"></td>
+                        <td id="printGameLevel-25"></td>
+                        <td id="printMaxCombo-25"></td>
+                        <td id="printSingle-25"></td>
+                        <td id="printDouble-25"></td>
+                        <td id="printTriple-25"></td>
+                        <td id="printTetris-25"></td>
+                        <td id="printPerfectClear-25"></td>    
+                        <td id="printTSpinSingleMini-25"></td>
+                        <td id="printTSpinDoubleMini-25"></td>
+                        <td id="printTSpinMini-25"></td>
+                        <td id="printTSpinSingle-25"></td>
+                        <td id="printTSpinDouble-25"></td>
+                        <td id="printTSpinTriple-25"></td>
+                        <td id="printTSpin-25"></td>
+                        <td id="printBackToBack-25"></td>
+                        <td id="printRotate-25"></td>
+                        <td id="printFallDistance-25"></td>
+                        <td id="printHold-25"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-26"></td>
+                        <td id="printScore-26"></td>
+                        <td id="printDate-26"></td>
+                        <td id="printTime-26"></td>
+                        <td id="printClearLine-26"></td>
+                        <td id="printGameLevel-26"></td>
+                        <td id="printMaxCombo-26"></td>
+                        <td id="printSingle-26"></td>
+                        <td id="printDouble-26"></td>
+                        <td id="printTriple-26"></td>
+                        <td id="printTetris-26"></td>
+                        <td id="printPerfectClear-26"></td>    
+                        <td id="printTSpinSingleMini-26"></td>
+                        <td id="printTSpinDoubleMini-26"></td>
+                        <td id="printTSpinMini-26"></td>
+                        <td id="printTSpinSingle-26"></td>
+                        <td id="printTSpinDouble-26"></td>
+                        <td id="printTSpinTriple-26"></td>
+                        <td id="printTSpin-26"></td>
+                        <td id="printBackToBack-26"></td>
+                        <td id="printRotate-26"></td>
+                        <td id="printFallDistance-26"></td>
+                        <td id="printHold-26"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-27"></td>
+                        <td id="printScore-27"></td>
+                        <td id="printDate-27"></td>
+                        <td id="printTime-27"></td>
+                        <td id="printClearLine-27"></td>
+                        <td id="printGameLevel-27"></td>
+                        <td id="printMaxCombo-27"></td>
+                        <td id="printSingle-27"></td>
+                        <td id="printDouble-27"></td>
+                        <td id="printTriple-27"></td>
+                        <td id="printTetris-27"></td>
+                        <td id="printPerfectClear-27"></td>    
+                        <td id="printTSpinSingleMini-27"></td>
+                        <td id="printTSpinDoubleMini-27"></td>
+                        <td id="printTSpinMini-27"></td>
+                        <td id="printTSpinSingle-27"></td>
+                        <td id="printTSpinDouble-27"></td>
+                        <td id="printTSpinTriple-27"></td>
+                        <td id="printTSpin-27"></td>
+                        <td id="printBackToBack-27"></td>
+                        <td id="printRotate-27"></td>
+                        <td id="printFallDistance-27"></td>
+                        <td id="printHold-27"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-28"></td>
+                        <td id="printScore-28"></td>
+                        <td id="printDate-28"></td>
+                        <td id="printTime-28"></td>
+                        <td id="printClearLine-28"></td>
+                        <td id="printGameLevel-28"></td>
+                        <td id="printMaxCombo-28"></td>
+                        <td id="printSingle-28"></td>
+                        <td id="printDouble-28"></td>
+                        <td id="printTriple-28"></td>
+                        <td id="printTetris-28"></td>
+                        <td id="printPerfectClear-28"></td>    
+                        <td id="printTSpinSingleMini-28"></td>
+                        <td id="printTSpinDoubleMini-28"></td>
+                        <td id="printTSpinMini-28"></td>
+                        <td id="printTSpinSingle-28"></td>
+                        <td id="printTSpinDouble-28"></td>
+                        <td id="printTSpinTriple-28"></td>
+                        <td id="printTSpin-28"></td>
+                        <td id="printBackToBack-28"></td>
+                        <td id="printRotate-28"></td>
+                        <td id="printFallDistance-28"></td>
+                        <td id="printHold-28"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-29"></td>
+                        <td id="printScore-29"></td>
+                        <td id="printDate-29"></td>
+                        <td id="printTime-29"></td>
+                        <td id="printClearLine-29"></td>
+                        <td id="printGameLevel-29"></td>
+                        <td id="printMaxCombo-29"></td>
+                        <td id="printSingle-29"></td>
+                        <td id="printDouble-29"></td>
+                        <td id="printTriple-29"></td>
+                        <td id="printTetris-29"></td>
+                        <td id="printPerfectClear-29"></td>    
+                        <td id="printTSpinSingleMini-29"></td>
+                        <td id="printTSpinDoubleMini-29"></td>
+                        <td id="printTSpinMini-29"></td>
+                        <td id="printTSpinSingle-29"></td>
+                        <td id="printTSpinDouble-29"></td>
+                        <td id="printTSpinTriple-29"></td>
+                        <td id="printTSpin-29"></td>
+                        <td id="printBackToBack-29"></td>
+                        <td id="printRotate-29"></td>
+                        <td id="printFallDistance-29"></td>
+                        <td id="printHold-29"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-30"></td>
+                        <td id="printScore-30"></td>
+                        <td id="printDate-30"></td>
+                        <td id="printTime-30"></td>
+                        <td id="printClearLine-30"></td>
+                        <td id="printGameLevel-30"></td>
+                        <td id="printMaxCombo-30"></td>
+                        <td id="printSingle-30"></td>
+                        <td id="printDouble-30"></td>
+                        <td id="printTriple-30"></td>
+                        <td id="printTetris-30"></td>
+                        <td id="printPerfectClear-30"></td>    
+                        <td id="printTSpinSingleMini-30"></td>
+                        <td id="printTSpinDoubleMini-30"></td>
+                        <td id="printTSpinMini-30"></td>
+                        <td id="printTSpinSingle-30"></td>
+                        <td id="printTSpinDouble-30"></td>
+                        <td id="printTSpinTriple-30"></td>
+                        <td id="printTSpin-30"></td>
+                        <td id="printBackToBack-30"></td>
+                        <td id="printRotate-30"></td>
+                        <td id="printFallDistance-30"></td>
+                        <td id="printHold-30"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td id="printRanking-31"></td>
+                        <td id="printScore-31"></td>
+                        <td id="printDate-31"></td>
+                        <td id="printTime-31"></td>
+                        <td id="printClearLine-31"></td>
+                        <td id="printGameLevel-31"></td>
+                        <td id="printMaxCombo-31"></td>
+                        <td id="printSingle-31"></td>
+                        <td id="printDouble-31"></td>
+                        <td id="printTriple-31"></td>
+                        <td id="printTetris-31"></td>
+                        <td id="printPerfectClear-31"></td>    
+                        <td id="printTSpinSingleMini-31"></td>
+                        <td id="printTSpinDoubleMini-31"></td>
+                        <td id="printTSpinMini-31"></td>
+                        <td id="printTSpinSingle-31"></td>
+                        <td id="printTSpinDouble-31"></td>
+                        <td id="printTSpinTriple-31"></td>
+                        <td id="printTSpin-31"></td>
+                        <td id="printBackToBack-31"></td>
+                        <td id="printRotate-31"></td>
+                        <td id="printFallDistance-31"></td>
+                        <td id="printHold-31"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-32"></td>
+                        <td id="printScore-32"></td>
+                        <td id="printDate-32"></td>
+                        <td id="printTime-32"></td>
+                        <td id="printClearLine-32"></td>
+                        <td id="printGameLevel-32"></td>
+                        <td id="printMaxCombo-32"></td>
+                        <td id="printSingle-32"></td>
+                        <td id="printDouble-32"></td>
+                        <td id="printTriple-32"></td>
+                        <td id="printTetris-32"></td>
+                        <td id="printPerfectClear-32"></td>    
+                        <td id="printTSpinSingleMini-32"></td>
+                        <td id="printTSpinDoubleMini-32"></td>
+                        <td id="printTSpinMini-32"></td>
+                        <td id="printTSpinSingle-32"></td>
+                        <td id="printTSpinDouble-32"></td>
+                        <td id="printTSpinTriple-32"></td>
+                        <td id="printTSpin-32"></td>
+                        <td id="printBackToBack-32"></td>
+                        <td id="printRotate-32"></td>
+                        <td id="printFallDistance-32"></td>
+                        <td id="printHold-32"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-33"></td>
+                        <td id="printScore-33"></td>
+                        <td id="printDate-33"></td>
+                        <td id="printTime-33"></td>
+                        <td id="printClearLine-33"></td>
+                        <td id="printGameLevel-33"></td>
+                        <td id="printMaxCombo-33"></td>
+                        <td id="printSingle-33"></td>
+                        <td id="printDouble-33"></td>
+                        <td id="printTriple-33"></td>
+                        <td id="printTetris-33"></td>
+                        <td id="printPerfectClear-33"></td>    
+                        <td id="printTSpinSingleMini-33"></td>
+                        <td id="printTSpinDoubleMini-33"></td>
+                        <td id="printTSpinMini-33"></td>
+                        <td id="printTSpinSingle-33"></td>
+                        <td id="printTSpinDouble-33"></td>
+                        <td id="printTSpinTriple-33"></td>
+                        <td id="printTSpin-33"></td>
+                        <td id="printBackToBack-33"></td>
+                        <td id="printRotate-33"></td>
+                        <td id="printFallDistance-33"></td>
+                        <td id="printHold-33"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-34"></td>
+                        <td id="printScore-34"></td>
+                        <td id="printDate-34"></td>
+                        <td id="printTime-34"></td>
+                        <td id="printClearLine-34"></td>
+                        <td id="printGameLevel-34"></td>
+                        <td id="printMaxCombo-34"></td>
+                        <td id="printSingle-34"></td>
+                        <td id="printDouble-34"></td>
+                        <td id="printTriple-34"></td>
+                        <td id="printTetris-34"></td>
+                        <td id="printPerfectClear-34"></td>    
+                        <td id="printTSpinSingleMini-34"></td>
+                        <td id="printTSpinDoubleMini-34"></td>
+                        <td id="printTSpinMini-34"></td>
+                        <td id="printTSpinSingle-34"></td>
+                        <td id="printTSpinDouble-34"></td>
+                        <td id="printTSpinTriple-34"></td>
+                        <td id="printTSpin-34"></td>
+                        <td id="printBackToBack-34"></td>
+                        <td id="printRotate-34"></td>
+                        <td id="printFallDistance-34"></td>
+                        <td id="printHold-34"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-35"></td>
+                        <td id="printScore-35"></td>
+                        <td id="printDate-35"></td>
+                        <td id="printTime-35"></td>
+                        <td id="printClearLine-35"></td>
+                        <td id="printGameLevel-35"></td>
+                        <td id="printMaxCombo-35"></td>
+                        <td id="printSingle-35"></td>
+                        <td id="printDouble-35"></td>
+                        <td id="printTriple-35"></td>
+                        <td id="printTetris-35"></td>
+                        <td id="printPerfectClear-35"></td>    
+                        <td id="printTSpinSingleMini-35"></td>
+                        <td id="printTSpinDoubleMini-35"></td>
+                        <td id="printTSpinMini-35"></td>
+                        <td id="printTSpinSingle-35"></td>
+                        <td id="printTSpinDouble-35"></td>
+                        <td id="printTSpinTriple-35"></td>
+                        <td id="printTSpin-35"></td>
+                        <td id="printBackToBack-35"></td>
+                        <td id="printRotate-35"></td>
+                        <td id="printFallDistance-35"></td>
+                        <td id="printHold-35"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-36"></td>
+                        <td id="printScore-36"></td>
+                        <td id="printDate-36"></td>
+                        <td id="printTime-36"></td>
+                        <td id="printClearLine-36"></td>
+                        <td id="printGameLevel-36"></td>
+                        <td id="printMaxCombo-36"></td>
+                        <td id="printSingle-36"></td>
+                        <td id="printDouble-36"></td>
+                        <td id="printTriple-36"></td>
+                        <td id="printTetris-36"></td>
+                        <td id="printPerfectClear-36"></td>    
+                        <td id="printTSpinSingleMini-36"></td>
+                        <td id="printTSpinDoubleMini-36"></td>
+                        <td id="printTSpinMini-36"></td>
+                        <td id="printTSpinSingle-36"></td>
+                        <td id="printTSpinDouble-36"></td>
+                        <td id="printTSpinTriple-36"></td>
+                        <td id="printTSpin-36"></td>
+                        <td id="printBackToBack-36"></td>
+                        <td id="printRotate-36"></td>
+                        <td id="printFallDistance-36"></td>
+                        <td id="printHold-36"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-37"></td>
+                        <td id="printScore-37"></td>
+                        <td id="printDate-37"></td>
+                        <td id="printTime-37"></td>
+                        <td id="printClearLine-37"></td>
+                        <td id="printGameLevel-37"></td>
+                        <td id="printMaxCombo-37"></td>
+                        <td id="printSingle-37"></td>
+                        <td id="printDouble-37"></td>
+                        <td id="printTriple-37"></td>
+                        <td id="printTetris-37"></td>
+                        <td id="printPerfectClear-37"></td>    
+                        <td id="printTSpinSingleMini-37"></td>
+                        <td id="printTSpinDoubleMini-37"></td>
+                        <td id="printTSpinMini-37"></td>
+                        <td id="printTSpinSingle-37"></td>
+                        <td id="printTSpinDouble-37"></td>
+                        <td id="printTSpinTriple-37"></td>
+                        <td id="printTSpin-37"></td>
+                        <td id="printBackToBack-37"></td>
+                        <td id="printRotate-37"></td>
+                        <td id="printFallDistance-37"></td>
+                        <td id="printHold-37"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-38"></td>
+                        <td id="printScore-38"></td>
+                        <td id="printDate-38"></td>
+                        <td id="printTime-38"></td>
+                        <td id="printClearLine-38"></td>
+                        <td id="printGameLevel-38"></td>
+                        <td id="printMaxCombo-38"></td>
+                        <td id="printSingle-38"></td>
+                        <td id="printDouble-38"></td>
+                        <td id="printTriple-38"></td>
+                        <td id="printTetris-38"></td>
+                        <td id="printPerfectClear-38"></td>    
+                        <td id="printTSpinSingleMini-38"></td>
+                        <td id="printTSpinDoubleMini-38"></td>
+                        <td id="printTSpinMini-38"></td>
+                        <td id="printTSpinSingle-38"></td>
+                        <td id="printTSpinDouble-38"></td>
+                        <td id="printTSpinTriple-38"></td>
+                        <td id="printTSpin-38"></td>
+                        <td id="printBackToBack-38"></td>
+                        <td id="printRotate-38"></td>
+                        <td id="printFallDistance-38"></td>
+                        <td id="printHold-38"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-39"></td>
+                        <td id="printScore-39"></td>
+                        <td id="printDate-39"></td>
+                        <td id="printTime-39"></td>
+                        <td id="printClearLine-39"></td>
+                        <td id="printGameLevel-39"></td>
+                        <td id="printMaxCombo-39"></td>
+                        <td id="printSingle-39"></td>
+                        <td id="printDouble-39"></td>
+                        <td id="printTriple-39"></td>
+                        <td id="printTetris-39"></td>
+                        <td id="printPerfectClear-39"></td>    
+                        <td id="printTSpinSingleMini-39"></td>
+                        <td id="printTSpinDoubleMini-39"></td>
+                        <td id="printTSpinMini-39"></td>
+                        <td id="printTSpinSingle-39"></td>
+                        <td id="printTSpinDouble-39"></td>
+                        <td id="printTSpinTriple-39"></td>
+                        <td id="printTSpin-39"></td>
+                        <td id="printBackToBack-39"></td>
+                        <td id="printRotate-39"></td>
+                        <td id="printFallDistance-39"></td>
+                        <td id="printHold-39"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-40"></td>
+                        <td id="printScore-40"></td>
+                        <td id="printDate-40"></td>
+                        <td id="printTime-40"></td>
+                        <td id="printClearLine-40"></td>
+                        <td id="printGameLevel-40"></td>
+                        <td id="printMaxCombo-40"></td>
+                        <td id="printSingle-40"></td>
+                        <td id="printDouble-40"></td>
+                        <td id="printTriple-40"></td>
+                        <td id="printTetris-40"></td>
+                        <td id="printPerfectClear-40"></td>    
+                        <td id="printTSpinSingleMini-40"></td>
+                        <td id="printTSpinDoubleMini-40"></td>
+                        <td id="printTSpinMini-40"></td>
+                        <td id="printTSpinSingle-40"></td>
+                        <td id="printTSpinDouble-40"></td>
+                        <td id="printTSpinTriple-40"></td>
+                        <td id="printTSpin-40"></td>
+                        <td id="printBackToBack-40"></td>
+                        <td id="printRotate-40"></td>
+                        <td id="printFallDistance-40"></td>
+                        <td id="printHold-40"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-41"></td>
+                        <td id="printScore-41"></td>
+                        <td id="printDate-41"></td>
+                        <td id="printTime-41"></td>
+                        <td id="printClearLine-41"></td>
+                        <td id="printGameLevel-41"></td>
+                        <td id="printMaxCombo-41"></td>
+                        <td id="printSingle-41"></td>
+                        <td id="printDouble-41"></td>
+                        <td id="printTriple-41"></td>
+                        <td id="printTetris-41"></td>
+                        <td id="printPerfectClear-41"></td>    
+                        <td id="printTSpinSingleMini-41"></td>
+                        <td id="printTSpinDoubleMini-41"></td>
+                        <td id="printTSpinMini-41"></td>
+                        <td id="printTSpinSingle-41"></td>
+                        <td id="printTSpinDouble-41"></td>
+                        <td id="printTSpinTriple-41"></td>
+                        <td id="printTSpin-41"></td>
+                        <td id="printBackToBack-41"></td>
+                        <td id="printRotate-41"></td>
+                        <td id="printFallDistance-41"></td>
+                        <td id="printHold-41"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-42"></td>
+                        <td id="printScore-42"></td>
+                        <td id="printDate-42"></td>
+                        <td id="printTime-42"></td>
+                        <td id="printClearLine-42"></td>
+                        <td id="printGameLevel-42"></td>
+                        <td id="printMaxCombo-42"></td>
+                        <td id="printSingle-42"></td>
+                        <td id="printDouble-42"></td>
+                        <td id="printTriple-42"></td>
+                        <td id="printTetris-42"></td>
+                        <td id="printPerfectClear-42"></td>    
+                        <td id="printTSpinSingleMini-42"></td>
+                        <td id="printTSpinDoubleMini-42"></td>
+                        <td id="printTSpinMini-42"></td>
+                        <td id="printTSpinSingle-42"></td>
+                        <td id="printTSpinDouble-42"></td>
+                        <td id="printTSpinTriple-42"></td>
+                        <td id="printTSpin-42"></td>
+                        <td id="printBackToBack-42"></td>
+                        <td id="printRotate-42"></td>
+                        <td id="printFallDistance-42"></td>
+                        <td id="printHold-42"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-43"></td>
+                        <td id="printScore-43"></td>
+                        <td id="printDate-43"></td>
+                        <td id="printTime-43"></td>
+                        <td id="printClearLine-43"></td>
+                        <td id="printGameLevel-43"></td>
+                        <td id="printMaxCombo-43"></td>
+                        <td id="printSingle-43"></td>
+                        <td id="printDouble-43"></td>
+                        <td id="printTriple-43"></td>
+                        <td id="printTetris-43"></td>
+                        <td id="printPerfectClear-43"></td>    
+                        <td id="printTSpinSingleMini-43"></td>
+                        <td id="printTSpinDoubleMini-43"></td>
+                        <td id="printTSpinMini-43"></td>
+                        <td id="printTSpinSingle-43"></td>
+                        <td id="printTSpinDouble-43"></td>
+                        <td id="printTSpinTriple-43"></td>
+                        <td id="printTSpin-43"></td>
+                        <td id="printBackToBack-43"></td>
+                        <td id="printRotate-43"></td>
+                        <td id="printFallDistance-43"></td>
+                        <td id="printHold-43"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-44"></td>
+                        <td id="printScore-44"></td>
+                        <td id="printDate-44"></td>
+                        <td id="printTime-44"></td>
+                        <td id="printClearLine-44"></td>
+                        <td id="printGameLevel-44"></td>
+                        <td id="printMaxCombo-44"></td>
+                        <td id="printSingle-44"></td>
+                        <td id="printDouble-44"></td>
+                        <td id="printTriple-44"></td>
+                        <td id="printTetris-44"></td>
+                        <td id="printPerfectClear-44"></td>    
+                        <td id="printTSpinSingleMini-44"></td>
+                        <td id="printTSpinDoubleMini-44"></td>
+                        <td id="printTSpinMini-44"></td>
+                        <td id="printTSpinSingle-44"></td>
+                        <td id="printTSpinDouble-44"></td>
+                        <td id="printTSpinTriple-44"></td>
+                        <td id="printTSpin-44"></td>
+                        <td id="printBackToBack-44"></td>
+                        <td id="printRotate-44"></td>
+                        <td id="printFallDistance-44"></td>
+                        <td id="printHold-44"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-45"></td>
+                        <td id="printScore-45"></td>
+                        <td id="printDate-45"></td>
+                        <td id="printTime-45"></td>
+                        <td id="printClearLine-45"></td>
+                        <td id="printGameLevel-45"></td>
+                        <td id="printMaxCombo-45"></td>
+                        <td id="printSingle-45"></td>
+                        <td id="printDouble-45"></td>
+                        <td id="printTriple-45"></td>
+                        <td id="printTetris-45"></td>
+                        <td id="printPerfectClear-45"></td>    
+                        <td id="printTSpinSingleMini-45"></td>
+                        <td id="printTSpinDoubleMini-45"></td>
+                        <td id="printTSpinMini-45"></td>
+                        <td id="printTSpinSingle-45"></td>
+                        <td id="printTSpinDouble-45"></td>
+                        <td id="printTSpinTriple-45"></td>
+                        <td id="printTSpin-45"></td>
+                        <td id="printBackToBack-45"></td>
+                        <td id="printRotate-45"></td>
+                        <td id="printFallDistance-45"></td>
+                        <td id="printHold-45"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-46"></td>
+                        <td id="printScore-46"></td>
+                        <td id="printDate-46"></td>
+                        <td id="printTime-46"></td>
+                        <td id="printClearLine-46"></td>
+                        <td id="printGameLevel-46"></td>
+                        <td id="printMaxCombo-46"></td>
+                        <td id="printSingle-46"></td>
+                        <td id="printDouble-46"></td>
+                        <td id="printTriple-46"></td>
+                        <td id="printTetris-46"></td>
+                        <td id="printPerfectClear-46"></td>    
+                        <td id="printTSpinSingleMini-46"></td>
+                        <td id="printTSpinDoubleMini-46"></td>
+                        <td id="printTSpinMini-46"></td>
+                        <td id="printTSpinSingle-46"></td>
+                        <td id="printTSpinDouble-46"></td>
+                        <td id="printTSpinTriple-46"></td>
+                        <td id="printTSpin-46"></td>
+                        <td id="printBackToBack-46"></td>
+                        <td id="printRotate-46"></td>
+                        <td id="printFallDistance-46"></td>
+                        <td id="printHold-46"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-47"></td>
+                        <td id="printScore-47"></td>
+                        <td id="printDate-47"></td>
+                        <td id="printTime-47"></td>
+                        <td id="printClearLine-47"></td>
+                        <td id="printGameLevel-47"></td>
+                        <td id="printMaxCombo-47"></td>
+                        <td id="printSingle-47"></td>
+                        <td id="printDouble-47"></td>
+                        <td id="printTriple-47"></td>
+                        <td id="printTetris-47"></td>
+                        <td id="printPerfectClear-47"></td>    
+                        <td id="printTSpinSingleMini-47"></td>
+                        <td id="printTSpinDoubleMini-47"></td>
+                        <td id="printTSpinMini-47"></td>
+                        <td id="printTSpinSingle-47"></td>
+                        <td id="printTSpinDouble-47"></td>
+                        <td id="printTSpinTriple-47"></td>
+                        <td id="printTSpin-47"></td>
+                        <td id="printBackToBack-47"></td>
+                        <td id="printRotate-47"></td>
+                        <td id="printFallDistance-47"></td>
+                        <td id="printHold-47"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-48"></td>
+                        <td id="printScore-48"></td>
+                        <td id="printDate-48"></td>
+                        <td id="printTime-48"></td>
+                        <td id="printClearLine-48"></td>
+                        <td id="printGameLevel-48"></td>
+                        <td id="printMaxCombo-48"></td>
+                        <td id="printSingle-48"></td>
+                        <td id="printDouble-48"></td>
+                        <td id="printTriple-48"></td>
+                        <td id="printTetris-48"></td>
+                        <td id="printPerfectClear-48"></td>    
+                        <td id="printTSpinSingleMini-48"></td>
+                        <td id="printTSpinDoubleMini-48"></td>
+                        <td id="printTSpinMini-48"></td>
+                        <td id="printTSpinSingle-48"></td>
+                        <td id="printTSpinDouble-48"></td>
+                        <td id="printTSpinTriple-48"></td>
+                        <td id="printTSpin-48"></td>
+                        <td id="printBackToBack-48"></td>
+                        <td id="printRotate-48"></td>
+                        <td id="printFallDistance-48"></td>
+                        <td id="printHold-48"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-49"></td>
+                        <td id="printScore-49"></td>
+                        <td id="printDate-49"></td>
+                        <td id="printTime-49"></td>
+                        <td id="printClearLine-49"></td>
+                        <td id="printGameLevel-49"></td>
+                        <td id="printMaxCombo-49"></td>
+                        <td id="printSingle-49"></td>
+                        <td id="printDouble-49"></td>
+                        <td id="printTriple-49"></td>
+                        <td id="printTetris-49"></td>
+                        <td id="printPerfectClear-49"></td>    
+                        <td id="printTSpinSingleMini-49"></td>
+                        <td id="printTSpinDoubleMini-49"></td>
+                        <td id="printTSpinMini-49"></td>
+                        <td id="printTSpinSingle-49"></td>
+                        <td id="printTSpinDouble-49"></td>
+                        <td id="printTSpinTriple-49"></td>
+                        <td id="printTSpin-49"></td>
+                        <td id="printBackToBack-49"></td>
+                        <td id="printRotate-49"></td>
+                        <td id="printFallDistance-49"></td>
+                        <td id="printHold-49"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-50"></td>
+                        <td id="printScore-50"></td>
+                        <td id="printDate-50"></td>
+                        <td id="printTime-50"></td>
+                        <td id="printClearLine-50"></td>
+                        <td id="printGameLevel-50"></td>
+                        <td id="printMaxCombo-50"></td>
+                        <td id="printSingle-50"></td>
+                        <td id="printDouble-50"></td>
+                        <td id="printTriple-50"></td>
+                        <td id="printTetris-50"></td>
+                        <td id="printPerfectClear-50"></td>    
+                        <td id="printTSpinSingleMini-50"></td>
+                        <td id="printTSpinDoubleMini-50"></td>
+                        <td id="printTSpinMini-50"></td>
+                        <td id="printTSpinSingle-50"></td>
+                        <td id="printTSpinDouble-50"></td>
+                        <td id="printTSpinTriple-50"></td>
+                        <td id="printTSpin-50"></td>
+                        <td id="printBackToBack-50"></td>
+                        <td id="printRotate-50"></td>
+                        <td id="printFallDistance-50"></td>
+                        <td id="printHold-50"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-51"></td>
+                        <td id="printScore-51"></td>
+                        <td id="printDate-51"></td>
+                        <td id="printTime-51"></td>
+                        <td id="printClearLine-51"></td>
+                        <td id="printGameLevel-51"></td>
+                        <td id="printMaxCombo-51"></td>
+                        <td id="printSingle-51"></td>
+                        <td id="printDouble-51"></td>
+                        <td id="printTriple-51"></td>
+                        <td id="printTetris-51"></td>
+                        <td id="printPerfectClear-51"></td>    
+                        <td id="printTSpinSingleMini-51"></td>
+                        <td id="printTSpinDoubleMini-51"></td>
+                        <td id="printTSpinMini-51"></td>
+                        <td id="printTSpinSingle-51"></td>
+                        <td id="printTSpinDouble-51"></td>
+                        <td id="printTSpinTriple-51"></td>
+                        <td id="printTSpin-51"></td>
+                        <td id="printBackToBack-51"></td>
+                        <td id="printRotate-51"></td>
+                        <td id="printFallDistance-51"></td>
+                        <td id="printHold-51"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-52"></td>
+                        <td id="printScore-52"></td>
+                        <td id="printDate-52"></td>
+                        <td id="printTime-52"></td>
+                        <td id="printClearLine-52"></td>
+                        <td id="printGameLevel-52"></td>
+                        <td id="printMaxCombo-52"></td>
+                        <td id="printSingle-52"></td>
+                        <td id="printDouble-52"></td>
+                        <td id="printTriple-52"></td>
+                        <td id="printTetris-52"></td>
+                        <td id="printPerfectClear-52"></td>    
+                        <td id="printTSpinSingleMini-52"></td>
+                        <td id="printTSpinDoubleMini-52"></td>
+                        <td id="printTSpinMini-52"></td>
+                        <td id="printTSpinSingle-52"></td>
+                        <td id="printTSpinDouble-52"></td>
+                        <td id="printTSpinTriple-52"></td>
+                        <td id="printTSpin-52"></td>
+                        <td id="printBackToBack-52"></td>
+                        <td id="printRotate-52"></td>
+                        <td id="printFallDistance-52"></td>
+                        <td id="printHold-52"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-53"></td>
+                        <td id="printScore-53"></td>
+                        <td id="printDate-53"></td>
+                        <td id="printTime-53"></td>
+                        <td id="printClearLine-53"></td>
+                        <td id="printGameLevel-53"></td>
+                        <td id="printMaxCombo-53"></td>
+                        <td id="printSingle-53"></td>
+                        <td id="printDouble-53"></td>
+                        <td id="printTriple-53"></td>
+                        <td id="printTetris-53"></td>
+                        <td id="printPerfectClear-53"></td>    
+                        <td id="printTSpinSingleMini-53"></td>
+                        <td id="printTSpinDoubleMini-53"></td>
+                        <td id="printTSpinMini-53"></td>
+                        <td id="printTSpinSingle-53"></td>
+                        <td id="printTSpinDouble-53"></td>
+                        <td id="printTSpinTriple-53"></td>
+                        <td id="printTSpin-53"></td>
+                        <td id="printBackToBack-53"></td>
+                        <td id="printRotate-53"></td>
+                        <td id="printFallDistance-53"></td>
+                        <td id="printHold-53"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-54"></td>
+                        <td id="printScore-54"></td>
+                        <td id="printDate-54"></td>
+                        <td id="printTime-54"></td>
+                        <td id="printClearLine-54"></td>
+                        <td id="printGameLevel-54"></td>
+                        <td id="printMaxCombo-54"></td>
+                        <td id="printSingle-54"></td>
+                        <td id="printDouble-54"></td>
+                        <td id="printTriple-54"></td>
+                        <td id="printTetris-54"></td>
+                        <td id="printPerfectClear-54"></td>    
+                        <td id="printTSpinSingleMini-54"></td>
+                        <td id="printTSpinDoubleMini-54"></td>
+                        <td id="printTSpinMini-54"></td>
+                        <td id="printTSpinSingle-54"></td>
+                        <td id="printTSpinDouble-54"></td>
+                        <td id="printTSpinTriple-54"></td>
+                        <td id="printTSpin-54"></td>
+                        <td id="printBackToBack-54"></td>
+                        <td id="printRotate-54"></td>
+                        <td id="printFallDistance-54"></td>
+                        <td id="printHold-54"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-55"></td>
+                        <td id="printScore-55"></td>
+                        <td id="printDate-55"></td>
+                        <td id="printTime-55"></td>
+                        <td id="printClearLine-55"></td>
+                        <td id="printGameLevel-55"></td>
+                        <td id="printMaxCombo-55"></td>
+                        <td id="printSingle-55"></td>
+                        <td id="printDouble-55"></td>
+                        <td id="printTriple-55"></td>
+                        <td id="printTetris-55"></td>
+                        <td id="printPerfectClear-55"></td>    
+                        <td id="printTSpinSingleMini-55"></td>
+                        <td id="printTSpinDoubleMini-55"></td>
+                        <td id="printTSpinMini-55"></td>
+                        <td id="printTSpinSingle-55"></td>
+                        <td id="printTSpinDouble-55"></td>
+                        <td id="printTSpinTriple-55"></td>
+                        <td id="printTSpin-55"></td>
+                        <td id="printBackToBack-55"></td>
+                        <td id="printRotate-55"></td>
+                        <td id="printFallDistance-55"></td>
+                        <td id="printHold-55"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-56"></td>
+                        <td id="printScore-56"></td>
+                        <td id="printDate-56"></td>
+                        <td id="printTime-56"></td>
+                        <td id="printClearLine-56"></td>
+                        <td id="printGameLevel-56"></td>
+                        <td id="printMaxCombo-56"></td>
+                        <td id="printSingle-56"></td>
+                        <td id="printDouble-56"></td>
+                        <td id="printTriple-56"></td>
+                        <td id="printTetris-56"></td>
+                        <td id="printPerfectClear-56"></td>    
+                        <td id="printTSpinSingleMini-56"></td>
+                        <td id="printTSpinDoubleMini-56"></td>
+                        <td id="printTSpinMini-56"></td>
+                        <td id="printTSpinSingle-56"></td>
+                        <td id="printTSpinDouble-56"></td>
+                        <td id="printTSpinTriple-56"></td>
+                        <td id="printTSpin-56"></td>
+                        <td id="printBackToBack-56"></td>
+                        <td id="printRotate-56"></td>
+                        <td id="printFallDistance-56"></td>
+                        <td id="printHold-56"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-57"></td>
+                        <td id="printScore-57"></td>
+                        <td id="printDate-57"></td>
+                        <td id="printTime-57"></td>
+                        <td id="printClearLine-57"></td>
+                        <td id="printGameLevel-57"></td>
+                        <td id="printMaxCombo-57"></td>
+                        <td id="printSingle-57"></td>
+                        <td id="printDouble-57"></td>
+                        <td id="printTriple-57"></td>
+                        <td id="printTetris-57"></td>
+                        <td id="printPerfectClear-57"></td>    
+                        <td id="printTSpinSingleMini-57"></td>
+                        <td id="printTSpinDoubleMini-57"></td>
+                        <td id="printTSpinMini-57"></td>
+                        <td id="printTSpinSingle-57"></td>
+                        <td id="printTSpinDouble-57"></td>
+                        <td id="printTSpinTriple-57"></td>
+                        <td id="printTSpin-57"></td>
+                        <td id="printBackToBack-57"></td>
+                        <td id="printRotate-57"></td>
+                        <td id="printFallDistance-57"></td>
+                        <td id="printHold-57"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-58"></td>
+                        <td id="printScore-58"></td>
+                        <td id="printDate-58"></td>
+                        <td id="printTime-58"></td>
+                        <td id="printClearLine-58"></td>
+                        <td id="printGameLevel-58"></td>
+                        <td id="printMaxCombo-58"></td>
+                        <td id="printSingle-58"></td>
+                        <td id="printDouble-58"></td>
+                        <td id="printTriple-58"></td>
+                        <td id="printTetris-58"></td>
+                        <td id="printPerfectClear-58"></td>    
+                        <td id="printTSpinSingleMini-58"></td>
+                        <td id="printTSpinDoubleMini-58"></td>
+                        <td id="printTSpinMini-58"></td>
+                        <td id="printTSpinSingle-58"></td>
+                        <td id="printTSpinDouble-58"></td>
+                        <td id="printTSpinTriple-58"></td>
+                        <td id="printTSpin-58"></td>
+                        <td id="printBackToBack-58"></td>
+                        <td id="printRotate-58"></td>
+                        <td id="printFallDistance-58"></td>
+                        <td id="printHold-58"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-59"></td>
+                        <td id="printScore-59"></td>
+                        <td id="printDate-59"></td>
+                        <td id="printTime-59"></td>
+                        <td id="printClearLine-59"></td>
+                        <td id="printGameLevel-59"></td>
+                        <td id="printMaxCombo-59"></td>
+                        <td id="printSingle-59"></td>
+                        <td id="printDouble-59"></td>
+                        <td id="printTriple-59"></td>
+                        <td id="printTetris-59"></td>
+                        <td id="printPerfectClear-59"></td>    
+                        <td id="printTSpinSingleMini-59"></td>
+                        <td id="printTSpinDoubleMini-59"></td>
+                        <td id="printTSpinMini-59"></td>
+                        <td id="printTSpinSingle-59"></td>
+                        <td id="printTSpinDouble-59"></td>
+                        <td id="printTSpinTriple-59"></td>
+                        <td id="printTSpin-59"></td>
+                        <td id="printBackToBack-59"></td>
+                        <td id="printRotate-59"></td>
+                        <td id="printFallDistance-59"></td>
+                        <td id="printHold-59"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-60"></td>
+                        <td id="printScore-60"></td>
+                        <td id="printDate-60"></td>
+                        <td id="printTime-60"></td>
+                        <td id="printClearLine-60"></td>
+                        <td id="printGameLevel-60"></td>
+                        <td id="printMaxCombo-60"></td>
+                        <td id="printSingle-60"></td>
+                        <td id="printDouble-60"></td>
+                        <td id="printTriple-60"></td>
+                        <td id="printTetris-60"></td>
+                        <td id="printPerfectClear-60"></td>    
+                        <td id="printTSpinSingleMini-60"></td>
+                        <td id="printTSpinDoubleMini-60"></td>
+                        <td id="printTSpinMini-60"></td>
+                        <td id="printTSpinSingle-60"></td>
+                        <td id="printTSpinDouble-60"></td>
+                        <td id="printTSpinTriple-60"></td>
+                        <td id="printTSpin-60"></td>
+                        <td id="printBackToBack-60"></td>
+                        <td id="printRotate-60"></td>
+                        <td id="printFallDistance-60"></td>
+                        <td id="printHold-60"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-61"></td>
+                        <td id="printScore-61"></td>
+                        <td id="printDate-61"></td>
+                        <td id="printTime-61"></td>
+                        <td id="printClearLine-61"></td>
+                        <td id="printGameLevel-61"></td>
+                        <td id="printMaxCombo-61"></td>
+                        <td id="printSingle-61"></td>
+                        <td id="printDouble-61"></td>
+                        <td id="printTriple-61"></td>
+                        <td id="printTetris-61"></td>
+                        <td id="printPerfectClear-61"></td>    
+                        <td id="printTSpinSingleMini-61"></td>
+                        <td id="printTSpinDoubleMini-61"></td>
+                        <td id="printTSpinMini-61"></td>
+                        <td id="printTSpinSingle-61"></td>
+                        <td id="printTSpinDouble-61"></td>
+                        <td id="printTSpinTriple-61"></td>
+                        <td id="printTSpin-61"></td>
+                        <td id="printBackToBack-61"></td>
+                        <td id="printRotate-61"></td>
+                        <td id="printFallDistance-61"></td>
+                        <td id="printHold-61"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-62"></td>
+                        <td id="printScore-62"></td>
+                        <td id="printDate-62"></td>
+                        <td id="printTime-62"></td>
+                        <td id="printClearLine-62"></td>
+                        <td id="printGameLevel-62"></td>
+                        <td id="printMaxCombo-62"></td>
+                        <td id="printSingle-62"></td>
+                        <td id="printDouble-62"></td>
+                        <td id="printTriple-62"></td>
+                        <td id="printTetris-62"></td>
+                        <td id="printPerfectClear-62"></td>    
+                        <td id="printTSpinSingleMini-62"></td>
+                        <td id="printTSpinDoubleMini-62"></td>
+                        <td id="printTSpinMini-62"></td>
+                        <td id="printTSpinSingle-62"></td>
+                        <td id="printTSpinDouble-62"></td>
+                        <td id="printTSpinTriple-62"></td>
+                        <td id="printTSpin-62"></td>
+                        <td id="printBackToBack-62"></td>
+                        <td id="printRotate-62"></td>
+                        <td id="printFallDistance-62"></td>
+                        <td id="printHold-62"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-63"></td>
+                        <td id="printScore-63"></td>
+                        <td id="printDate-63"></td>
+                        <td id="printTime-63"></td>
+                        <td id="printClearLine-63"></td>
+                        <td id="printGameLevel-63"></td>
+                        <td id="printMaxCombo-63"></td>
+                        <td id="printSingle-63"></td>
+                        <td id="printDouble-63"></td>
+                        <td id="printTriple-63"></td>
+                        <td id="printTetris-63"></td>
+                        <td id="printPerfectClear-63"></td>    
+                        <td id="printTSpinSingleMini-63"></td>
+                        <td id="printTSpinDoubleMini-63"></td>
+                        <td id="printTSpinMini-63"></td>
+                        <td id="printTSpinSingle-63"></td>
+                        <td id="printTSpinDouble-63"></td>
+                        <td id="printTSpinTriple-63"></td>
+                        <td id="printTSpin-63"></td>
+                        <td id="printBackToBack-63"></td>
+                        <td id="printRotate-63"></td>
+                        <td id="printFallDistance-63"></td>
+                        <td id="printHold-63"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-64"></td>
+                        <td id="printScore-64"></td>
+                        <td id="printDate-64"></td>
+                        <td id="printTime-64"></td>
+                        <td id="printClearLine-64"></td>
+                        <td id="printGameLevel-64"></td>
+                        <td id="printMaxCombo-64"></td>
+                        <td id="printSingle-64"></td>
+                        <td id="printDouble-64"></td>
+                        <td id="printTriple-64"></td>
+                        <td id="printTetris-64"></td>
+                        <td id="printPerfectClear-64"></td>    
+                        <td id="printTSpinSingleMini-64"></td>
+                        <td id="printTSpinDoubleMini-64"></td>
+                        <td id="printTSpinMini-64"></td>
+                        <td id="printTSpinSingle-64"></td>
+                        <td id="printTSpinDouble-64"></td>
+                        <td id="printTSpinTriple-64"></td>
+                        <td id="printTSpin-64"></td>
+                        <td id="printBackToBack-64"></td>
+                        <td id="printRotate-64"></td>
+                        <td id="printFallDistance-64"></td>
+                        <td id="printHold-64"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-65"></td>
+                        <td id="printScore-65"></td>
+                        <td id="printDate-65"></td>
+                        <td id="printTime-65"></td>
+                        <td id="printClearLine-65"></td>
+                        <td id="printGameLevel-65"></td>
+                        <td id="printMaxCombo-65"></td>
+                        <td id="printSingle-65"></td>
+                        <td id="printDouble-65"></td>
+                        <td id="printTriple-65"></td>
+                        <td id="printTetris-65"></td>
+                        <td id="printPerfectClear-65"></td>    
+                        <td id="printTSpinSingleMini-65"></td>
+                        <td id="printTSpinDoubleMini-65"></td>
+                        <td id="printTSpinMini-65"></td>
+                        <td id="printTSpinSingle-65"></td>
+                        <td id="printTSpinDouble-65"></td>
+                        <td id="printTSpinTriple-65"></td>
+                        <td id="printTSpin-65"></td>
+                        <td id="printBackToBack-65"></td>
+                        <td id="printRotate-65"></td>
+                        <td id="printFallDistance-65"></td>
+                        <td id="printHold-65"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-66"></td>
+                        <td id="printScore-66"></td>
+                        <td id="printDate-66"></td>
+                        <td id="printTime-66"></td>
+                        <td id="printClearLine-66"></td>
+                        <td id="printGameLevel-66"></td>
+                        <td id="printMaxCombo-66"></td>
+                        <td id="printSingle-66"></td>
+                        <td id="printDouble-66"></td>
+                        <td id="printTriple-66"></td>
+                        <td id="printTetris-66"></td>
+                        <td id="printPerfectClear-66"></td>    
+                        <td id="printTSpinSingleMini-66"></td>
+                        <td id="printTSpinDoubleMini-66"></td>
+                        <td id="printTSpinMini-66"></td>
+                        <td id="printTSpinSingle-66"></td>
+                        <td id="printTSpinDouble-66"></td>
+                        <td id="printTSpinTriple-66"></td>
+                        <td id="printTSpin-66"></td>
+                        <td id="printBackToBack-66"></td>
+                        <td id="printRotate-66"></td>
+                        <td id="printFallDistance-66"></td>
+                        <td id="printHold-66"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-67"></td>
+                        <td id="printScore-67"></td>
+                        <td id="printDate-67"></td>
+                        <td id="printTime-67"></td>
+                        <td id="printClearLine-67"></td>
+                        <td id="printGameLevel-67"></td>
+                        <td id="printMaxCombo-67"></td>
+                        <td id="printSingle-67"></td>
+                        <td id="printDouble-67"></td>
+                        <td id="printTriple-67"></td>
+                        <td id="printTetris-67"></td>
+                        <td id="printPerfectClear-67"></td>    
+                        <td id="printTSpinSingleMini-67"></td>
+                        <td id="printTSpinDoubleMini-67"></td>
+                        <td id="printTSpinMini-67"></td>
+                        <td id="printTSpinSingle-67"></td>
+                        <td id="printTSpinDouble-67"></td>
+                        <td id="printTSpinTriple-67"></td>
+                        <td id="printTSpin-67"></td>
+                        <td id="printBackToBack-67"></td>
+                        <td id="printRotate-67"></td>
+                        <td id="printFallDistance-67"></td>
+                        <td id="printHold-67"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-68"></td>
+                        <td id="printScore-68"></td>
+                        <td id="printDate-68"></td>
+                        <td id="printTime-68"></td>
+                        <td id="printClearLine-68"></td>
+                        <td id="printGameLevel-68"></td>
+                        <td id="printMaxCombo-68"></td>
+                        <td id="printSingle-68"></td>
+                        <td id="printDouble-68"></td>
+                        <td id="printTriple-68"></td>
+                        <td id="printTetris-68"></td>
+                        <td id="printPerfectClear-68"></td>    
+                        <td id="printTSpinSingleMini-68"></td>
+                        <td id="printTSpinDoubleMini-68"></td>
+                        <td id="printTSpinMini-68"></td>
+                        <td id="printTSpinSingle-68"></td>
+                        <td id="printTSpinDouble-68"></td>
+                        <td id="printTSpinTriple-68"></td>
+                        <td id="printTSpin-68"></td>
+                        <td id="printBackToBack-68"></td>
+                        <td id="printRotate-68"></td>
+                        <td id="printFallDistance-68"></td>
+                        <td id="printHold-68"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-69"></td>
+                        <td id="printScore-69"></td>
+                        <td id="printDate-69"></td>
+                        <td id="printTime-69"></td>
+                        <td id="printClearLine-69"></td>
+                        <td id="printGameLevel-69"></td>
+                        <td id="printMaxCombo-69"></td>
+                        <td id="printSingle-69"></td>
+                        <td id="printDouble-69"></td>
+                        <td id="printTriple-69"></td>
+                        <td id="printTetris-69"></td>
+                        <td id="printPerfectClear-69"></td>    
+                        <td id="printTSpinSingleMini-69"></td>
+                        <td id="printTSpinDoubleMini-69"></td>
+                        <td id="printTSpinMini-69"></td>
+                        <td id="printTSpinSingle-69"></td>
+                        <td id="printTSpinDouble-69"></td>
+                        <td id="printTSpinTriple-69"></td>
+                        <td id="printTSpin-69"></td>
+                        <td id="printBackToBack-69"></td>
+                        <td id="printRotate-69"></td>
+                        <td id="printFallDistance-69"></td>
+                        <td id="printHold-69"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-70"></td>
+                        <td id="printScore-70"></td>
+                        <td id="printDate-70"></td>
+                        <td id="printTime-70"></td>
+                        <td id="printClearLine-70"></td>
+                        <td id="printGameLevel-70"></td>
+                        <td id="printMaxCombo-70"></td>
+                        <td id="printSingle-70"></td>
+                        <td id="printDouble-70"></td>
+                        <td id="printTriple-70"></td>
+                        <td id="printTetris-70"></td>
+                        <td id="printPerfectClear-70"></td>    
+                        <td id="printTSpinSingleMini-70"></td>
+                        <td id="printTSpinDoubleMini-70"></td>
+                        <td id="printTSpinMini-70"></td>
+                        <td id="printTSpinSingle-70"></td>
+                        <td id="printTSpinDouble-70"></td>
+                        <td id="printTSpinTriple-70"></td>
+                        <td id="printTSpin-70"></td>
+                        <td id="printBackToBack-70"></td>
+                        <td id="printRotate-70"></td>
+                        <td id="printFallDistance-70"></td>
+                        <td id="printHold-70"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-71"></td>
+                        <td id="printScore-71"></td>
+                        <td id="printDate-71"></td>
+                        <td id="printTime-71"></td>
+                        <td id="printClearLine-71"></td>
+                        <td id="printGameLevel-71"></td>
+                        <td id="printMaxCombo-71"></td>
+                        <td id="printSingle-71"></td>
+                        <td id="printDouble-71"></td>
+                        <td id="printTriple-71"></td>
+                        <td id="printTetris-71"></td>
+                        <td id="printPerfectClear-71"></td>    
+                        <td id="printTSpinSingleMini-71"></td>
+                        <td id="printTSpinDoubleMini-71"></td>
+                        <td id="printTSpinMini-71"></td>
+                        <td id="printTSpinSingle-71"></td>
+                        <td id="printTSpinDouble-71"></td>
+                        <td id="printTSpinTriple-71"></td>
+                        <td id="printTSpin-71"></td>
+                        <td id="printBackToBack-71"></td>
+                        <td id="printRotate-71"></td>
+                        <td id="printFallDistance-71"></td>
+                        <td id="printHold-71"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-72"></td>
+                        <td id="printScore-72"></td>
+                        <td id="printDate-72"></td>
+                        <td id="printTime-72"></td>
+                        <td id="printClearLine-72"></td>
+                        <td id="printGameLevel-72"></td>
+                        <td id="printMaxCombo-72"></td>
+                        <td id="printSingle-72"></td>
+                        <td id="printDouble-72"></td>
+                        <td id="printTriple-72"></td>
+                        <td id="printTetris-72"></td>
+                        <td id="printPerfectClear-72"></td>    
+                        <td id="printTSpinSingleMini-72"></td>
+                        <td id="printTSpinDoubleMini-72"></td>
+                        <td id="printTSpinMini-72"></td>
+                        <td id="printTSpinSingle-72"></td>
+                        <td id="printTSpinDouble-72"></td>
+                        <td id="printTSpinTriple-72"></td>
+                        <td id="printTSpin-72"></td>
+                        <td id="printBackToBack-72"></td>
+                        <td id="printRotate-72"></td>
+                        <td id="printFallDistance-72"></td>
+                        <td id="printHold-72"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-73"></td>
+                        <td id="printScore-73"></td>
+                        <td id="printDate-73"></td>
+                        <td id="printTime-73"></td>
+                        <td id="printClearLine-73"></td>
+                        <td id="printGameLevel-73"></td>
+                        <td id="printMaxCombo-73"></td>
+                        <td id="printSingle-73"></td>
+                        <td id="printDouble-73"></td>
+                        <td id="printTriple-73"></td>
+                        <td id="printTetris-73"></td>
+                        <td id="printPerfectClear-73"></td>    
+                        <td id="printTSpinSingleMini-73"></td>
+                        <td id="printTSpinDoubleMini-73"></td>
+                        <td id="printTSpinMini-73"></td>
+                        <td id="printTSpinSingle-73"></td>
+                        <td id="printTSpinDouble-73"></td>
+                        <td id="printTSpinTriple-73"></td>
+                        <td id="printTSpin-73"></td>
+                        <td id="printBackToBack-73"></td>
+                        <td id="printRotate-73"></td>
+                        <td id="printFallDistance-73"></td>
+                        <td id="printHold-73"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-74"></td>
+                        <td id="printScore-74"></td>
+                        <td id="printDate-74"></td>
+                        <td id="printTime-74"></td>
+                        <td id="printClearLine-74"></td>
+                        <td id="printGameLevel-74"></td>
+                        <td id="printMaxCombo-74"></td>
+                        <td id="printSingle-74"></td>
+                        <td id="printDouble-74"></td>
+                        <td id="printTriple-74"></td>
+                        <td id="printTetris-74"></td>
+                        <td id="printPerfectClear-74"></td>    
+                        <td id="printTSpinSingleMini-74"></td>
+                        <td id="printTSpinDoubleMini-74"></td>
+                        <td id="printTSpinMini-74"></td>
+                        <td id="printTSpinSingle-74"></td>
+                        <td id="printTSpinDouble-74"></td>
+                        <td id="printTSpinTriple-74"></td>
+                        <td id="printTSpin-74"></td>
+                        <td id="printBackToBack-74"></td>
+                        <td id="printRotate-74"></td>
+                        <td id="printFallDistance-74"></td>
+                        <td id="printHold-74"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-75"></td>
+                        <td id="printScore-75"></td>
+                        <td id="printDate-75"></td>
+                        <td id="printTime-75"></td>
+                        <td id="printClearLine-75"></td>
+                        <td id="printGameLevel-75"></td>
+                        <td id="printMaxCombo-75"></td>
+                        <td id="printSingle-75"></td>
+                        <td id="printDouble-75"></td>
+                        <td id="printTriple-75"></td>
+                        <td id="printTetris-75"></td>
+                        <td id="printPerfectClear-75"></td>    
+                        <td id="printTSpinSingleMini-75"></td>
+                        <td id="printTSpinDoubleMini-75"></td>
+                        <td id="printTSpinMini-75"></td>
+                        <td id="printTSpinSingle-75"></td>
+                        <td id="printTSpinDouble-75"></td>
+                        <td id="printTSpinTriple-75"></td>
+                        <td id="printTSpin-75"></td>
+                        <td id="printBackToBack-75"></td>
+                        <td id="printRotate-75"></td>
+                        <td id="printFallDistance-75"></td>
+                        <td id="printHold-75"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-76"></td>
+                        <td id="printScore-76"></td>
+                        <td id="printDate-76"></td>
+                        <td id="printTime-76"></td>
+                        <td id="printClearLine-76"></td>
+                        <td id="printGameLevel-76"></td>
+                        <td id="printMaxCombo-76"></td>
+                        <td id="printSingle-76"></td>
+                        <td id="printDouble-76"></td>
+                        <td id="printTriple-76"></td>
+                        <td id="printTetris-76"></td>
+                        <td id="printPerfectClear-76"></td>    
+                        <td id="printTSpinSingleMini-76"></td>
+                        <td id="printTSpinDoubleMini-76"></td>
+                        <td id="printTSpinMini-76"></td>
+                        <td id="printTSpinSingle-76"></td>
+                        <td id="printTSpinDouble-76"></td>
+                        <td id="printTSpinTriple-76"></td>
+                        <td id="printTSpin-76"></td>
+                        <td id="printBackToBack-76"></td>
+                        <td id="printRotate-76"></td>
+                        <td id="printFallDistance-76"></td>
+                        <td id="printHold-76"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-77"></td>
+                        <td id="printScore-77"></td>
+                        <td id="printDate-77"></td>
+                        <td id="printTime-77"></td>
+                        <td id="printClearLine-77"></td>
+                        <td id="printGameLevel-77"></td>
+                        <td id="printMaxCombo-77"></td>
+                        <td id="printSingle-77"></td>
+                        <td id="printDouble-77"></td>
+                        <td id="printTriple-77"></td>
+                        <td id="printTetris-77"></td>
+                        <td id="printPerfectClear-77"></td>    
+                        <td id="printTSpinSingleMini-77"></td>
+                        <td id="printTSpinDoubleMini-77"></td>
+                        <td id="printTSpinMini-77"></td>
+                        <td id="printTSpinSingle-77"></td>
+                        <td id="printTSpinDouble-77"></td>
+                        <td id="printTSpinTriple-77"></td>
+                        <td id="printTSpin-77"></td>
+                        <td id="printBackToBack-77"></td>
+                        <td id="printRotate-77"></td>
+                        <td id="printFallDistance-77"></td>
+                        <td id="printHold-77"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-78"></td>
+                        <td id="printScore-78"></td>
+                        <td id="printDate-78"></td>
+                        <td id="printTime-78"></td>
+                        <td id="printClearLine-78"></td>
+                        <td id="printGameLevel-78"></td>
+                        <td id="printMaxCombo-78"></td>
+                        <td id="printSingle-78"></td>
+                        <td id="printDouble-78"></td>
+                        <td id="printTriple-78"></td>
+                        <td id="printTetris-78"></td>
+                        <td id="printPerfectClear-78"></td>    
+                        <td id="printTSpinSingleMini-78"></td>
+                        <td id="printTSpinDoubleMini-78"></td>
+                        <td id="printTSpinMini-78"></td>
+                        <td id="printTSpinSingle-78"></td>
+                        <td id="printTSpinDouble-78"></td>
+                        <td id="printTSpinTriple-78"></td>
+                        <td id="printTSpin-78"></td>
+                        <td id="printBackToBack-78"></td>
+                        <td id="printRotate-78"></td>
+                        <td id="printFallDistance-78"></td>
+                        <td id="printHold-78"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-79"></td>
+                        <td id="printScore-79"></td>
+                        <td id="printDate-79"></td>
+                        <td id="printTime-79"></td>
+                        <td id="printClearLine-79"></td>
+                        <td id="printGameLevel-79"></td>
+                        <td id="printMaxCombo-79"></td>
+                        <td id="printSingle-79"></td>
+                        <td id="printDouble-79"></td>
+                        <td id="printTriple-79"></td>
+                        <td id="printTetris-79"></td>
+                        <td id="printPerfectClear-79"></td>    
+                        <td id="printTSpinSingleMini-79"></td>
+                        <td id="printTSpinDoubleMini-79"></td>
+                        <td id="printTSpinMini-79"></td>
+                        <td id="printTSpinSingle-79"></td>
+                        <td id="printTSpinDouble-79"></td>
+                        <td id="printTSpinTriple-79"></td>
+                        <td id="printTSpin-79"></td>
+                        <td id="printBackToBack-79"></td>
+                        <td id="printRotate-79"></td>
+                        <td id="printFallDistance-79"></td>
+                        <td id="printHold-79"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-80"></td>
+                        <td id="printScore-80"></td>
+                        <td id="printDate-80"></td>
+                        <td id="printTime-80"></td>
+                        <td id="printClearLine-80"></td>
+                        <td id="printGameLevel-80"></td>
+                        <td id="printMaxCombo-80"></td>
+                        <td id="printSingle-80"></td>
+                        <td id="printDouble-80"></td>
+                        <td id="printTriple-80"></td>
+                        <td id="printTetris-80"></td>
+                        <td id="printPerfectClear-80"></td>    
+                        <td id="printTSpinSingleMini-80"></td>
+                        <td id="printTSpinDoubleMini-80"></td>
+                        <td id="printTSpinMini-80"></td>
+                        <td id="printTSpinSingle-80"></td>
+                        <td id="printTSpinDouble-80"></td>
+                        <td id="printTSpinTriple-80"></td>
+                        <td id="printTSpin-80"></td>
+                        <td id="printBackToBack-80"></td>
+                        <td id="printRotate-80"></td>
+                        <td id="printFallDistance-80"></td>
+                        <td id="printHold-80"></td>
+
+                        <tr>
+                            <td id="printRanking-81"></td>
+                            <td id="printScore-81"></td>
+                            <td id="printDate-81"></td>
+                            <td id="printTime-81"></td>
+                            <td id="printClearLine-81"></td>
+                            <td id="printGameLevel-81"></td>
+                            <td id="printMaxCombo-81"></td>
+                            <td id="printSingle-81"></td>
+                            <td id="printDouble-81"></td>
+                            <td id="printTriple-81"></td>
+                            <td id="printTetris-81"></td>
+                            <td id="printPerfectClear-81"></td>    
+                            <td id="printTSpinSingleMini-81"></td>
+                            <td id="printTSpinDoubleMini-81"></td>
+                            <td id="printTSpinMini-81"></td>
+                            <td id="printTSpinSingle-81"></td>
+                            <td id="printTSpinDouble-81"></td>
+                            <td id="printTSpinTriple-81"></td>
+                            <td id="printTSpin-81"></td>
+                            <td id="printBackToBack-81"></td>
+                            <td id="printRotate-81"></td>
+                            <td id="printFallDistance-81"></td>
+                            <td id="printHold-81"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-82"></td>
+                            <td id="printScore-82"></td>
+                            <td id="printDate-82"></td>
+                            <td id="printTime-82"></td>
+                            <td id="printClearLine-82"></td>
+                            <td id="printGameLevel-82"></td>
+                            <td id="printMaxCombo-82"></td>
+                            <td id="printSingle-82"></td>
+                            <td id="printDouble-82"></td>
+                            <td id="printTriple-82"></td>
+                            <td id="printTetris-82"></td>
+                            <td id="printPerfectClear-82"></td>    
+                            <td id="printTSpinSingleMini-82"></td>
+                            <td id="printTSpinDoubleMini-82"></td>
+                            <td id="printTSpinMini-82"></td>
+                            <td id="printTSpinSingle-82"></td>
+                            <td id="printTSpinDouble-82"></td>
+                            <td id="printTSpinTriple-82"></td>
+                            <td id="printTSpin-82"></td>
+                            <td id="printBackToBack-82"></td>
+                            <td id="printRotate-82"></td>
+                            <td id="printFallDistance-82"></td>
+                            <td id="printHold-82"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-83"></td>
+                            <td id="printScore-83"></td>
+                            <td id="printDate-83"></td>
+                            <td id="printTime-83"></td>
+                            <td id="printClearLine-83"></td>
+                            <td id="printGameLevel-83"></td>
+                            <td id="printMaxCombo-83"></td>
+                            <td id="printSingle-83"></td>
+                            <td id="printDouble-83"></td>
+                            <td id="printTriple-83"></td>
+                            <td id="printTetris-83"></td>
+                            <td id="printPerfectClear-83"></td>    
+                            <td id="printTSpinSingleMini-83"></td>
+                            <td id="printTSpinDoubleMini-83"></td>
+                            <td id="printTSpinMini-83"></td>
+                            <td id="printTSpinSingle-83"></td>
+                            <td id="printTSpinDouble-83"></td>
+                            <td id="printTSpinTriple-83"></td>
+                            <td id="printTSpin-83"></td>
+                            <td id="printBackToBack-83"></td>
+                            <td id="printRotate-83"></td>
+                            <td id="printFallDistance-83"></td>
+                            <td id="printHold-83"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-84"></td>
+                            <td id="printScore-84"></td>
+                            <td id="printDate-84"></td>
+                            <td id="printTime-84"></td>
+                            <td id="printClearLine-84"></td>
+                            <td id="printGameLevel-84"></td>
+                            <td id="printMaxCombo-84"></td>
+                            <td id="printSingle-84"></td>
+                            <td id="printDouble-84"></td>
+                            <td id="printTriple-84"></td>
+                            <td id="printTetris-84"></td>
+                            <td id="printPerfectClear-84"></td>    
+                            <td id="printTSpinSingleMini-84"></td>
+                            <td id="printTSpinDoubleMini-84"></td>
+                            <td id="printTSpinMini-84"></td>
+                            <td id="printTSpinSingle-84"></td>
+                            <td id="printTSpinDouble-84"></td>
+                            <td id="printTSpinTriple-84"></td>
+                            <td id="printTSpin-84"></td>
+                            <td id="printBackToBack-84"></td>
+                            <td id="printRotate-84"></td>
+                            <td id="printFallDistance-84"></td>
+                            <td id="printHold-84"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-85"></td>
+                            <td id="printScore-85"></td>
+                            <td id="printDate-85"></td>
+                            <td id="printTime-85"></td>
+                            <td id="printClearLine-85"></td>
+                            <td id="printGameLevel-85"></td>
+                            <td id="printMaxCombo-85"></td>
+                            <td id="printSingle-85"></td>
+                            <td id="printDouble-85"></td>
+                            <td id="printTriple-85"></td>
+                            <td id="printTetris-85"></td>
+                            <td id="printPerfectClear-85"></td>    
+                            <td id="printTSpinSingleMini-85"></td>
+                            <td id="printTSpinDoubleMini-85"></td>
+                            <td id="printTSpinMini-85"></td>
+                            <td id="printTSpinSingle-85"></td>
+                            <td id="printTSpinDouble-85"></td>
+                            <td id="printTSpinTriple-85"></td>
+                            <td id="printTSpin-85"></td>
+                            <td id="printBackToBack-85"></td>
+                            <td id="printRotate-85"></td>
+                            <td id="printFallDistance-85"></td>
+                            <td id="printHold-85"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-86"></td>
+                            <td id="printScore-86"></td>
+                            <td id="printDate-86"></td>
+                            <td id="printTime-86"></td>
+                            <td id="printClearLine-86"></td>
+                            <td id="printGameLevel-86"></td>
+                            <td id="printMaxCombo-86"></td>
+                            <td id="printSingle-86"></td>
+                            <td id="printDouble-86"></td>
+                            <td id="printTriple-86"></td>
+                            <td id="printTetris-86"></td>
+                            <td id="printPerfectClear-86"></td>    
+                            <td id="printTSpinSingleMini-86"></td>
+                            <td id="printTSpinDoubleMini-86"></td>
+                            <td id="printTSpinMini-86"></td>
+                            <td id="printTSpinSingle-86"></td>
+                            <td id="printTSpinDouble-86"></td>
+                            <td id="printTSpinTriple-86"></td>
+                            <td id="printTSpin-86"></td>
+                            <td id="printBackToBack-86"></td>
+                            <td id="printRotate-86"></td>
+                            <td id="printFallDistance-86"></td>
+                            <td id="printHold-86"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-87"></td>
+                            <td id="printScore-87"></td>
+                            <td id="printDate-87"></td>
+                            <td id="printTime-87"></td>
+                            <td id="printClearLine-87"></td>
+                            <td id="printGameLevel-87"></td>
+                            <td id="printMaxCombo-87"></td>
+                            <td id="printSingle-87"></td>
+                            <td id="printDouble-87"></td>
+                            <td id="printTriple-87"></td>
+                            <td id="printTetris-87"></td>
+                            <td id="printPerfectClear-87"></td>    
+                            <td id="printTSpinSingleMini-87"></td>
+                            <td id="printTSpinDoubleMini-87"></td>
+                            <td id="printTSpinMini-87"></td>
+                            <td id="printTSpinSingle-87"></td>
+                            <td id="printTSpinDouble-87"></td>
+                            <td id="printTSpinTriple-87"></td>
+                            <td id="printTSpin-87"></td>
+                            <td id="printBackToBack-87"></td>
+                            <td id="printRotate-87"></td>
+                            <td id="printFallDistance-87"></td>
+                            <td id="printHold-87"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-88"></td>
+                            <td id="printScore-88"></td>
+                            <td id="printDate-88"></td>
+                            <td id="printTime-88"></td>
+                            <td id="printClearLine-88"></td>
+                            <td id="printGameLevel-88"></td>
+                            <td id="printMaxCombo-88"></td>
+                            <td id="printSingle-88"></td>
+                            <td id="printDouble-88"></td>
+                            <td id="printTriple-88"></td>
+                            <td id="printTetris-88"></td>
+                            <td id="printPerfectClear-88"></td>    
+                            <td id="printTSpinSingleMini-88"></td>
+                            <td id="printTSpinDoubleMini-88"></td>
+                            <td id="printTSpinMini-88"></td>
+                            <td id="printTSpinSingle-88"></td>
+                            <td id="printTSpinDouble-88"></td>
+                            <td id="printTSpinTriple-88"></td>
+                            <td id="printTSpin-88"></td>
+                            <td id="printBackToBack-88"></td>
+                            <td id="printRotate-88"></td>
+                            <td id="printFallDistance-88"></td>
+                            <td id="printHold-88"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-89"></td>
+                            <td id="printScore-89"></td>
+                            <td id="printDate-89"></td>
+                            <td id="printTime-89"></td>
+                            <td id="printClearLine-89"></td>
+                            <td id="printGameLevel-89"></td>
+                            <td id="printMaxCombo-89"></td>
+                            <td id="printSingle-89"></td>
+                            <td id="printDouble-89"></td>
+                            <td id="printTriple-89"></td>
+                            <td id="printTetris-89"></td>
+                            <td id="printPerfectClear-89"></td>    
+                            <td id="printTSpinSingleMini-89"></td>
+                            <td id="printTSpinDoubleMini-89"></td>
+                            <td id="printTSpinMini-89"></td>
+                            <td id="printTSpinSingle-89"></td>
+                            <td id="printTSpinDouble-89"></td>
+                            <td id="printTSpinTriple-89"></td>
+                            <td id="printTSpin-89"></td>
+                            <td id="printBackToBack-89"></td>
+                            <td id="printRotate-89"></td>
+                            <td id="printFallDistance-89"></td>
+                            <td id="printHold-89"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-90"></td>
+                            <td id="printScore-90"></td>
+                            <td id="printDate-90"></td>
+                            <td id="printTime-90"></td>
+                            <td id="printClearLine-90"></td>
+                            <td id="printGameLevel-90"></td>
+                            <td id="printMaxCombo-90"></td>
+                            <td id="printSingle-90"></td>
+                            <td id="printDouble-90"></td>
+                            <td id="printTriple-90"></td>
+                            <td id="printTetris-90"></td>
+                            <td id="printPerfectClear-90"></td>    
+                            <td id="printTSpinSingleMini-90"></td>
+                            <td id="printTSpinDoubleMini-90"></td>
+                            <td id="printTSpinMini-90"></td>
+                            <td id="printTSpinSingle-90"></td>
+                            <td id="printTSpinDouble-90"></td>
+                            <td id="printTSpinTriple-90"></td>
+                            <td id="printTSpin-90"></td>
+                            <td id="printBackToBack-90"></td>
+                            <td id="printRotate-90"></td>
+                            <td id="printFallDistance-90"></td>
+                            <td id="printHold-90"></td>
+                        </tr>
+
+                        <tr>
+                            <td id="printRanking-91"></td>
+                            <td id="printScore-91"></td>
+                            <td id="printDate-91"></td>
+                            <td id="printTime-91"></td>
+                            <td id="printClearLine-91"></td>
+                            <td id="printGameLevel-91"></td>
+                            <td id="printMaxCombo-91"></td>
+                            <td id="printSingle-91"></td>
+                            <td id="printDouble-91"></td>
+                            <td id="printTriple-91"></td>
+                            <td id="printTetris-91"></td>
+                            <td id="printPerfectClear-91"></td>    
+                            <td id="printTSpinSingleMini-91"></td>
+                            <td id="printTSpinDoubleMini-91"></td>
+                            <td id="printTSpinMini-91"></td>
+                            <td id="printTSpinSingle-91"></td>
+                            <td id="printTSpinDouble-91"></td>
+                            <td id="printTSpinTriple-91"></td>
+                            <td id="printTSpin-91"></td>
+                            <td id="printBackToBack-91"></td>
+                            <td id="printRotate-91"></td>
+                            <td id="printFallDistance-91"></td>
+                            <td id="printHold-91"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-92"></td>
+                            <td id="printScore-92"></td>
+                            <td id="printDate-92"></td>
+                            <td id="printTime-92"></td>
+                            <td id="printClearLine-92"></td>
+                            <td id="printGameLevel-92"></td>
+                            <td id="printMaxCombo-92"></td>
+                            <td id="printSingle-92"></td>
+                            <td id="printDouble-92"></td>
+                            <td id="printTriple-92"></td>
+                            <td id="printTetris-92"></td>
+                            <td id="printPerfectClear-92"></td>    
+                            <td id="printTSpinSingleMini-92"></td>
+                            <td id="printTSpinDoubleMini-92"></td>
+                            <td id="printTSpinMini-92"></td>
+                            <td id="printTSpinSingle-92"></td>
+                            <td id="printTSpinDouble-92"></td>
+                            <td id="printTSpinTriple-92"></td>
+                            <td id="printTSpin-92"></td>
+                            <td id="printBackToBack-92"></td>
+                            <td id="printRotate-92"></td>
+                            <td id="printFallDistance-92"></td>
+                            <td id="printHold-92"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-93"></td>
+                            <td id="printScore-93"></td>
+                            <td id="printDate-93"></td>
+                            <td id="printTime-93"></td>
+                            <td id="printClearLine-93"></td>
+                            <td id="printGameLevel-93"></td>
+                            <td id="printMaxCombo-93"></td>
+                            <td id="printSingle-93"></td>
+                            <td id="printDouble-93"></td>
+                            <td id="printTriple-93"></td>
+                            <td id="printTetris-93"></td>
+                            <td id="printPerfectClear-93"></td>    
+                            <td id="printTSpinSingleMini-93"></td>
+                            <td id="printTSpinDoubleMini-93"></td>
+                            <td id="printTSpinMini-93"></td>
+                            <td id="printTSpinSingle-93"></td>
+                            <td id="printTSpinDouble-93"></td>
+                            <td id="printTSpinTriple-93"></td>
+                            <td id="printTSpin-93"></td>
+                            <td id="printBackToBack-93"></td>
+                            <td id="printRotate-93"></td>
+                            <td id="printFallDistance-93"></td>
+                            <td id="printHold-93"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-94"></td>
+                            <td id="printScore-94"></td>
+                            <td id="printDate-94"></td>
+                            <td id="printTime-94"></td>
+                            <td id="printClearLine-94"></td>
+                            <td id="printGameLevel-94"></td>
+                            <td id="printMaxCombo-94"></td>
+                            <td id="printSingle-94"></td>
+                            <td id="printDouble-94"></td>
+                            <td id="printTriple-94"></td>
+                            <td id="printTetris-94"></td>
+                            <td id="printPerfectClear-94"></td>    
+                            <td id="printTSpinSingleMini-94"></td>
+                            <td id="printTSpinDoubleMini-94"></td>
+                            <td id="printTSpinMini-94"></td>
+                            <td id="printTSpinSingle-94"></td>
+                            <td id="printTSpinDouble-94"></td>
+                            <td id="printTSpinTriple-94"></td>
+                            <td id="printTSpin-94"></td>
+                            <td id="printBackToBack-94"></td>
+                            <td id="printRotate-94"></td>
+                            <td id="printFallDistance-94"></td>
+                            <td id="printHold-94"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-95"></td>
+                            <td id="printScore-95"></td>
+                            <td id="printDate-95"></td>
+                            <td id="printTime-95"></td>
+                            <td id="printClearLine-95"></td>
+                            <td id="printGameLevel-95"></td>
+                            <td id="printMaxCombo-95"></td>
+                            <td id="printSingle-95"></td>
+                            <td id="printDouble-95"></td>
+                            <td id="printTriple-95"></td>
+                            <td id="printTetris-95"></td>
+                            <td id="printPerfectClear-95"></td>    
+                            <td id="printTSpinSingleMini-95"></td>
+                            <td id="printTSpinDoubleMini-95"></td>
+                            <td id="printTSpinMini-95"></td>
+                            <td id="printTSpinSingle-95"></td>
+                            <td id="printTSpinDouble-95"></td>
+                            <td id="printTSpinTriple-95"></td>
+                            <td id="printTSpin-95"></td>
+                            <td id="printBackToBack-95"></td>
+                            <td id="printRotate-95"></td>
+                            <td id="printFallDistance-95"></td>
+                            <td id="printHold-95"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-96"></td>
+                            <td id="printScore-96"></td>
+                            <td id="printDate-96"></td>
+                            <td id="printTime-96"></td>
+                            <td id="printClearLine-96"></td>
+                            <td id="printGameLevel-96"></td>
+                            <td id="printMaxCombo-96"></td>
+                            <td id="printSingle-96"></td>
+                            <td id="printDouble-96"></td>
+                            <td id="printTriple-96"></td>
+                            <td id="printTetris-96"></td>
+                            <td id="printPerfectClear-96"></td>    
+                            <td id="printTSpinSingleMini-96"></td>
+                            <td id="printTSpinDoubleMini-96"></td>
+                            <td id="printTSpinMini-96"></td>
+                            <td id="printTSpinSingle-96"></td>
+                            <td id="printTSpinDouble-96"></td>
+                            <td id="printTSpinTriple-96"></td>
+                            <td id="printTSpin-96"></td>
+                            <td id="printBackToBack-96"></td>
+                            <td id="printRotate-96"></td>
+                            <td id="printFallDistance-96"></td>
+                            <td id="printHold-96"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-97"></td>
+                            <td id="printScore-97"></td>
+                            <td id="printDate-97"></td>
+                            <td id="printTime-97"></td>
+                            <td id="printClearLine-97"></td>
+                            <td id="printGameLevel-97"></td>
+                            <td id="printMaxCombo-97"></td>
+                            <td id="printSingle-97"></td>
+                            <td id="printDouble-97"></td>
+                            <td id="printTriple-97"></td>
+                            <td id="printTetris-97"></td>
+                            <td id="printPerfectClear-97"></td>    
+                            <td id="printTSpinSingleMini-97"></td>
+                            <td id="printTSpinDoubleMini-97"></td>
+                            <td id="printTSpinMini-97"></td>
+                            <td id="printTSpinSingle-97"></td>
+                            <td id="printTSpinDouble-97"></td>
+                            <td id="printTSpinTriple-97"></td>
+                            <td id="printTSpin-97"></td>
+                            <td id="printBackToBack-97"></td>
+                            <td id="printRotate-97"></td>
+                            <td id="printFallDistance-97"></td>
+                            <td id="printHold-97"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-98"></td>
+                            <td id="printScore-98"></td>
+                            <td id="printDate-98"></td>
+                            <td id="printTime-98"></td>
+                            <td id="printClearLine-98"></td>
+                            <td id="printGameLevel-98"></td>
+                            <td id="printMaxCombo-98"></td>
+                            <td id="printSingle-98"></td>
+                            <td id="printDouble-98"></td>
+                            <td id="printTriple-98"></td>
+                            <td id="printTetris-98"></td>
+                            <td id="printPerfectClear-98"></td>    
+                            <td id="printTSpinSingleMini-98"></td>
+                            <td id="printTSpinDoubleMini-98"></td>
+                            <td id="printTSpinMini-98"></td>
+                            <td id="printTSpinSingle-98"></td>
+                            <td id="printTSpinDouble-98"></td>
+                            <td id="printTSpinTriple-98"></td>
+                            <td id="printTSpin-98"></td>
+                            <td id="printBackToBack-98"></td>
+                            <td id="printRotate-98"></td>
+                            <td id="printFallDistance-98"></td>
+                            <td id="printHold-98"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-99"></td>
+                            <td id="printScore-99"></td>
+                            <td id="printDate-99"></td>
+                            <td id="printTime-99"></td>
+                            <td id="printClearLine-99"></td>
+                            <td id="printGameLevel-99"></td>
+                            <td id="printMaxCombo-99"></td>
+                            <td id="printSingle-99"></td>
+                            <td id="printDouble-99"></td>
+                            <td id="printTriple-99"></td>
+                            <td id="printTetris-99"></td>
+                            <td id="printPerfectClear-99"></td>    
+                            <td id="printTSpinSingleMini-99"></td>
+                            <td id="printTSpinDoubleMini-99"></td>
+                            <td id="printTSpinMini-99"></td>
+                            <td id="printTSpinSingle-99"></td>
+                            <td id="printTSpinDouble-99"></td>
+                            <td id="printTSpinTriple-99"></td>
+                            <td id="printTSpin-99"></td>
+                            <td id="printBackToBack-99"></td>
+                            <td id="printRotate-99"></td>
+                            <td id="printFallDistance-99"></td>
+                            <td id="printHold-99"></td>
+                        </tr>
+    
+                        <tr>
+                            <td id="printRanking-100"></td>
+                            <td id="printScore-100"></td>
+                            <td id="printDate-100"></td>
+                            <td id="printTime-100"></td>
+                            <td id="printClearLine-100"></td>
+                            <td id="printGameLevel-100"></td>
+                            <td id="printMaxCombo-100"></td>
+                            <td id="printSingle-100"></td>
+                            <td id="printDouble-100"></td>
+                            <td id="printTriple-100"></td>
+                            <td id="printTetris-100"></td>
+                            <td id="printPerfectClear-100"></td>    
+                            <td id="printTSpinSingleMini-100"></td>
+                            <td id="printTSpinDoubleMini-100"></td>
+                            <td id="printTSpinMini-100"></td>
+                            <td id="printTSpinSingle-100"></td>
+                            <td id="printTSpinDouble-100"></td>
+                            <td id="printTSpinTriple-100"></td>
+                            <td id="printTSpin-100"></td>
+                            <td id="printBackToBack-100"></td>
+                            <td id="printRotate-100"></td>
+                            <td id="printFallDistance-100"></td>
+                            <td id="printHold-100"></td>
+                        </tr>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <a href="detailRanking.html".html" class="gotop">トップへ</a>
+
+        <script src="js/detailRanking.js"></script>
+
+    </body>
+</html>

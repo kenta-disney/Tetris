@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head><meta charset="utf-8">
+        <title>統計情報</title>
+        <meta http-equiv="content-type" content = "text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    	<link rel="stylesheet" type="text/css" media="screen,print" href="css/styleMain.css">
+    </head>
+    <body>
+        <div id="header">
+            <br>
+            <b><font size="3" face="HGP行書体">徹底的に再現！</font></b>
+            <br>
+            <b><font size="7" face="HGP行書体">本気のTETRIS</font></b>
+        </div>
+        
+        <div id="sidebar">
+
+            <a href="index.html" class="btn btn-gradient"><span>トップ</span></a>
+
+            <p><span class="css-br"></span></p>
+
+            <div class="btn-border-gradient-wrap btn-border-gradient-wrap--gold">
+                <a href="tetris.html" class="btn btn-border-gradient"><span class="btn-text-gradient--gold">テトリスをプレイ</span></a>
+            </div>
+            
+
+            <p><span class="css-br"></span></p>
+            
+            <div class="btn-border-gradient-wrap btn-border-gradient-wrap--silver">
+                <a href="tetris.html?sound=false" class="btn btn-border-gradient"><span class="btn-text-gradient--silver">音無しでプレイ</span></a>
+            </div>
+
+            <p><span class="css-br"></span></p>
+
+            <a href="ranking.html" class="btn btn-radius-solid">あなたのランキング<i class="fas fa-angle-right fa-position-right"></i></a>
+
+            <p><span class="css-br"></span></p>
+
+            <a href="statisticalData.html" class="btn btn-radius-solid">あなたの統計<i class="fas fa-angle-right fa-position-right"></i></a>
+            
+            <p><span class="css-br"></span></p>
+
+            <a href="userGuide.html" class="btn btn-radius-solid">操作方法<i class="fas fa-angle-right fa-position-right"></i></a>
+
+            <p><span class="css-br"></span></p>
+
+            <a href="specification.html" class="btn btn-radius-solid">詳細なルール<i class="fas fa-angle-right fa-position-right"></i></a>
+
+            <p><span class="css-br"></span></p>
+
+            <p>【上級者向け】</p>
+            <a href="dasAndArr.html" class="btn btn-radius-solid">DASとARRについて<i class="fas fa-angle-right fa-position-right"></i></a>
+    </div>
+        
+        <div id="content">
+            <h2>あなたの統計データ（通算）</h2>
+            
+            <div class="ranking">
+                <table width = "100%" border="1">
+                    <tr>
+                        <th width = "20%">通算スコア</th>
+                        <th width = "20%">通算プレイ回数</th>
+                        <th width = "20%">通算プレイ時間</th>
+                        <th width = "20%">通算消去ライン数</th>
+                        <th width = "20%">通算レベル数</th>
+                    </tr>
+
+                    <tr>
+                        <td id="printTotalScore"></td>
+                        <td id="printTotalDate"></td>
+                        <td id="printTotalTime"></td>
+                        <td id="printTotalClearLine"></td>
+                        <td id="printTotalGameLevel"></td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <br>
+
+            <div class="ranking">
+                <table width = "100%" border="1">
+                    <tr>
+                        <th width = "20%">通算Single回数</th>
+                        <th width = "20%">通算Double回数</th>
+                        <th width = "20%">通算Triple回数</th>
+                        <th width = "20%">通算Tetris回数</th>
+                        <th width = "20%">通算Perfect Clear回数</th>
+                    </tr>
+
+                    <tr>
+                        <td id="printTotalSingle"></td>
+                        <td id="printTotalDouble"></td>
+                        <td id="printTotalTriple"></td>
+                        <td id="printTotalTetris"></td>
+                        <td id="printTotalPerfectClear"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <br>
+
+            <div class="ranking">
+                <table width = "100%" border="1">
+                    <tr>
+                        <th width = "20%">通算T-Spin Single Mini回数</th>
+                        <th width = "20%">通算T-Spin Double Mini回数</th>
+                        <th width = "20%">通算T-Spin Mini回数</th>
+                        <th width = "20%">通算T-Spin Single回数</th>
+                        <th width = "20%">通算T-Spin Double回数</th>
+                    </tr>
+
+                    <tr>
+                        <td id="printTotalTSpinSingleMini"></td>
+                        <td id="printTotalTSpinDoubleMini"></td>
+                        <td id="printTotalTSpinMini"></td>
+                        <td id="printTotalTSpinSingle"></td>
+                        <td id="printTotalTSpinDouble"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <br>
+
+            <div class="ranking">
+                <table width = "100%" border="1">
+                    <tr>
+                        <th width = "16.6%">通算T-Spin Triple回数</th>
+                        <th width = "16.6%">通算T-Spin回数</th>
+                        <th width = "16.6%">通算Back-To-Back回数</th>
+                        <th width = "16.6%">通算回転回数</th>
+                        <th width = "16.6%">通算落下距離</th>
+                        <th width = "16.6%">通算Hold回数</th>
+                    </tr>
+
+                    <tr>
+                        <td id="printTotalTSpinTriple"></td>
+                        <td id="printTotalTSpin"></td>
+                        <td id="printTotalBackToBack"></td>
+                        <td id="printTotalRotate"></td>
+                        <td id="printTotalFallDistance"></td>
+                        <td id="printTotalHold"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <br><br>
+            
+            <h2>あなたの統計データ（最大）</h2>
+
+            <div class="ranking">
+                <table width = "100%" border="1">
+                    <tr>
+                        <th width = "20%">最大スコア</th>
+                        <th width = "20%">最大プレイ時間</th>
+                        <th width = "20%">最大消去ライン数</th>
+                        <th width = "20%">最大レベル数</th>
+                        <th width = "20%">最大コンボ数</th>
+                    </tr>
+
+                    <tr>
+                        <td id="printMaxScore"></td>
+                        <td id="printMaxTime"></td>
+                        <td id="printMaxClearLine"></td>
+                        <td id="printMaxGameLevel"></td>
+                        <td id="printMaxCombo"></td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <br>
+
+            <div class="ranking">
+                <table width = "100%" border="1">
+                    <tr>
+                        <th width = "20%">最大Single回数</th>
+                        <th width = "20%">最大Double回数</th>
+                        <th width = "20%">最大Triple回数</th>
+                        <th width = "20%">最大Tetris回数</th>
+                        <th width = "20%">最大Perfect Clear回数</th>
+                    </tr>
+
+                    <tr>
+                        <td id="printMaxSingle"></td>
+                        <td id="printMaxDouble"></td>
+                        <td id="printMaxTriple"></td>
+                        <td id="printMaxTetris"></td>
+                        <td id="printMaxPerfectClear"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <br>
+
+            <div class="ranking">
+                <table width = "100%" border="1">
+                    <tr>
+                        <th width = "20%">最大T-Spin Single Mini回数</th>
+                        <th width = "20%">最大T-Spin Double Mini回数</th>
+                        <th width = "20%">最大T-Spin Mini回数</th>
+                        <th width = "20%">最大T-Spin Single回数</th>
+                        <th width = "20%">最大T-Spin Double回数</th>
+                    </tr>
+
+                    <tr>
+                        <td id="printMaxTSpinSingleMini"></td>
+                        <td id="printMaxTSpinDoubleMini"></td>
+                        <td id="printMaxTSpinMini"></td>
+                        <td id="printMaxTSpinSingle"></td>
+                        <td id="printMaxTSpinDouble"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <br>
+
+            <div class="ranking">
+                <table width = "100%" border="1">
+                    <tr>
+                        <th width = "16.6%">最大T-Spin Triple回数</th>
+                        <th width = "16.6%">最大T-Spin回数</th>
+                        <th width = "16.6%">最大Back-To-Back回数</th>
+                        <th width = "16.6%">最大ミノ回転回数</th>
+                        <th width = "16.6%">最大ミノ落下距離</th>
+                        <th width = "16.6%">最大Hold回数</th>
+                    </tr>
+
+                    <tr>
+                        <td id="printMaxTSpinTriple"></td>
+                        <td id="printMaxTSpin"></td>
+                        <td id="printMaxBackToBack"></td>
+                        <td id="printMaxRotate"></td>
+                        <td id="printMaxFallDistance"></td>
+                        <td id="printMaxHold"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        
+        <a href="statisticalData.html" class="gotop">トップへ</a>
+
+        <script src="js/statisticalData.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head><meta charset="utf-8">
+        <title>詳細なルール</title>
+        <meta http-equiv="content-type" content = "text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    	<link rel="stylesheet" type="text/css" media="screen,print" href="css/styleMain.css">
+    </head>
+    <body>
+        <div id="header">
+            <br>
+            <b><font size="3" face="HGP行書体">徹底的に再現！</font></b>
+            <br>
+            <b><font size="7" face="HGP行書体">本気のTETRIS</font></b>
+        </div>
+        
+        <div id="sidebar">
+
+            <a href="index.html" class="btn btn-gradient"><span>トップ</span></a>
+
+            <p><span class="css-br"></span></p>
+
+            <div class="btn-border-gradient-wrap btn-border-gradient-wrap--gold">
+                <a href="tetris.html" class="btn btn-border-gradient"><span class="btn-text-gradient--gold">テトリスをプレイ</span></a>
+            </div>
+            
+
+            <p><span class="css-br"></span></p>
+            
+            <div class="btn-border-gradient-wrap btn-border-gradient-wrap--silver">
+                <a href="tetris.html?sound=false" class="btn btn-border-gradient"><span class="btn-text-gradient--silver">音無しでプレイ</span></a>
+            </div>
+
+            <p><span class="css-br"></span></p>
+
+            <a href="ranking.html" class="btn btn-radius-solid">あなたのランキング<i class="fas fa-angle-right fa-position-right"></i></a>
+
+            <p><span class="css-br"></span></p>
+
+            <a href="statisticalData.html" class="btn btn-radius-solid">あなたの統計<i class="fas fa-angle-right fa-position-right"></i></a>
+            
+            <p><span class="css-br"></span></p>
+
+            <a href="userGuide.html" class="btn btn-radius-solid">操作方法<i class="fas fa-angle-right fa-position-right"></i></a>
+
+            <p><span class="css-br"></span></p>
+
+            <a href="specification.html" class="btn btn-radius-solid">詳細なルール<i class="fas fa-angle-right fa-position-right"></i></a>
+
+            <p><span class="css-br"></span></p>
+
+            <p>【上級者向け】</p>
+            <a href="dasAndArr.html" class="btn btn-radius-solid">DASとARRについて<i class="fas fa-angle-right fa-position-right"></i></a>
+
+    </div>
+        
+        <div id="content">
+            <h1 style="text-align:center">満たしている仕様（詳細なルール）</h1>
+
+            <hr>
+
+            <h2>概要</h2>
+
+
+            <p>縦20行横10列のフィールドに、7種類のテトリミノが上部からランダムに落下してくる。それらを回転させたり左右に移動させたりして操作し、フィールドに敷き詰める。横一列揃うとその行が消去され点数が加算される。10ライン消去するごとにレベルアップし、落下速度が徐々に速くなる。NEXTには次以降出現するテトリミノが表示され、HOLDは落下中のテトリミノをキープし、必要なときに交換することができる。プレイヤーは、できるだけ高得点かつ長い時間プレイを続けることを目標とする。</p>
+
+            <br>
+
+            <h2>詳細なルール</h2>
+            
+            <ul>
+                <li>NEXTの実装
+                    <ul>
+                        <li>7種類のテトリミノを1順として、そのセットの中からランダムで出現する。</li>
+                    </ul>
+                    <br>
+                </li>
+
+                <li>HOLDの実装
+                    <ul>
+                        <li>テトリミノをキープすることができ、必要なときに入れ替えることができる。</li>
+                        <li>ただし、1度入れ替えられたテトリミノは、テトリミノが設置されるまで使用できなくなる。この間は灰色で表示される。</li>
+                    </ul>
+                    <br>
+                </li>
+
+                <li>ゴーストブロックの実装
+                    <ul>
+                        <li>落下地点が薄く表示される。</li>
+                    </ul>
+                    <br>
+                </li>
+
+                <li>ソフトドロップ（遊び時間）の実装
+                    <ul>
+                        <li>下に移動できなくなった瞬間から0.5秒間の猶予が生まれ、その0.5秒間の間に何も操作されなければ設置される。</li>
+                        <li>0.5秒間の間に回転や移動が行われるとタイマーがリセットされてまた、0.5秒の猶予が生まれる。</li>
+                        <li>回転や移動が15回行われると、底面に触れた瞬間設置される。底面が触れていない間は回転や移動を行うことができる。</li>
+                        <li>15回のカウントは1ブロック落下するとリセットされる。ただし、回転で上昇しても位置の最低値が更新されないとリセットされない。</li>
+                    </ul>
+                    <br>
+                </li>
+                
+                <li>ハードドロップ（高速落下）の実装
+                    <ul>
+                        <li>即座にテトリミノが設置される。</li>
+                        <li>その際、遊び時間はなく、次のテトリミノが即座に表示される。</li>
+                    </ul>
+                    <br>
+                </li>
+
+                <li>スーパーローテーションシステムの実装
+                    <ul>
+                        <li>通常の回転が行えない場合に、補正が行われる。</li>
+                    </ul>
+                    <br>
+                </li>
+
+                <li>T-Spinの実装
+                    <ul>
+                        <li>T型のテトリミノを回転入れすることができる。</li>
+                    </ul>
+                    <br>
+                </li>
+
+                <li>落下速度アップの実装
+                    <ul>
+                        <li>10ライン消去するごとに、落下速度が段々速くなる。</li>
+                    </ul>
+                    <br>
+                </li>
+
+                <li>ゲームオーバー判定の実装
+                    <ul>
+                        <li>通常の設置ができない場合にテトリミノの設置を1行上にずらす。設置できない場合はもう1行上にずらす。それでも設置できない場合はゲームオーバーとなる。</li>
+                    </ul>
+                    <br>
+                </li>
+
+                <li>21～24列目の実装
+                    <ul>
+                        <li>21列目が少し表示される。</li>
+                        <li>テトリミノが出現する場所でなければ、完全にはみ出していても設置することができる。</li>
+                    </ul>
+                    <br>
+                </li>
+
+            </ul>
+
+            <br>
+
+            <h2>機能</h2>
+
+            <ul>
+                <li>ランキングの実装
+                    <ul>
+                        <li>ブラウザを更新してもランキングはリセットされない。</li>
+                    </ul>
+                    <br>
+                </li>
+
+                <li>隠しコマンドの実装
+                    <ul>
+                        <li>様々な隠しコマンドが用意されている。</li>
+                    </ul>
+                    <br>
+                </li>
+            </ul>
+
+            <br>
+        </div>
+        <a href="specification.html" class="gotop">トップへ</a>
+    </body>
+</html>>
