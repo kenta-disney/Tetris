@@ -1,0 +1,203 @@
+body{ 
+    font-size: 80%;
+    background: linear-gradient(to bottom, #EEEEEE, #CCCCCC 50%,#EEEEEE);
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 50px;
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+
+
+
+
+
+a.btn-gradient {
+
+    font-weight: normal;
+  
+    color: #fff;
+    border-radius: 0;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(40%, #ff3cac),
+      to(#562b7c)
+    );
+    background-image: -webkit-linear-gradient(left, #ff3cac 40%, #562b7c 100%);
+    background-image: linear-gradient(90deg, #ff3cac 40%, #562b7c 100%);
+
+    border-radius: 100px;
+    font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro",
+    "Hiragino Mincho ProN", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+    line-height: 3.8;
+  }
+  
+  a.btn-gradient:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 100%;
+  
+    content: "";
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#ff3cac),
+      color-stop(#562b7c),
+      to(#2b86c5)
+    );
+  
+    background-image: -webkit-linear-gradient(left, #ff3cac, #562b7c, #2b86c5);
+  
+    background-image: linear-gradient(90deg, #ff3cac, #562b7c, #2b86c5);
+
+    border-radius: 100px;
+    font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro",
+    "Hiragino Mincho ProN", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+    line-height: 3.8;
+  }
+  
+  a.btn-gradient span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  a.btn-gradient:hover {
+    color: #fff;
+  }
+  
+  a.btn-gradient:hover:after {
+    opacity: 0;
+  }
+
+  h2 {
+    font-size: 12px;
+    padding: 1rem 2rem;
+    border-top: 4px solid #d8dcdc;
+    border-right: 4px solid #666;
+    border-bottom: 4px solid #333;
+    border-left: 4px solid #868888;
+    border-radius: 0;
+    background-image: -webkit-linear-gradient(135deg, #ccc 0%, #868888 20%, #d8dcdc 34%, white 53%, #ccc 100%);
+    background-image: linear-gradient(-45deg, #ccc 0%, #868888 20%, #d8dcdc 34%, white 53%, #ccc 100%);
+  }
+
+  .inline-block {
+    display: inline-block;
+}
+
+a.btn-radius-solid {
+    border: 1px solid #ccc;
+    background: #f1e767;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdfbfb), to(#ebedee));
+    background: -webkit-linear-gradient(top, #fdfbfb 0%, #ebedee 100%);
+    background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+    -webkit-box-shadow: inset 1px 1px 1px #fff;
+    box-shadow: inset 1px 1px 1px #fff;
+    font-size: 12px;
+    font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro",
+    "Hiragino Mincho ProN", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+  }
+  
+  a.btn-radius-solid:hover {
+    background: -webkit-gradient(linear, left bottom, left top, from(#fdfbfb), to(#ebedee));
+    background: -webkit-linear-gradient(bottom, #fdfbfb 0%, #ebedee 100%);
+    background: linear-gradient(to top, #fdfbfb 0%, #ebedee 100%);
+  }
+
+  html{
+    scroll-behavior: smooth;
+}
+.gotop{
+    display: block;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    background: #FFF;
+    border: 1px solid #999;
+    padding-top: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+    font-size: 85%;
+    text-decoration: none;
+    color: #333;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000;
+}
+.gotop::before{
+    content: "";
+    display: block;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    width: 25%;
+    height: 25%;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+.gotop:hover{
+    opacity: 1;
+}
+@media(max-width:750px){
+    .gotop{
+        width: 40px;
+        height: 40px;
+        text-indent: -9999px;
+        opacity: 1;
+        border: none;
+        background: none;
+        bottom: 10px;
+        right: 10px;
+    }
+    .gotop::before{
+        bottom: 0;
+    }
+}
+
+.gotop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000;
+}
+
+.ranking {
+  color:#000000;
+  font-size:12px;
+  text-align: center;
+}
