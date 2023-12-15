@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head><meta charset="utf-8">
+        <title>ランキング</title>
+        <meta http-equiv="content-type" content = "text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    	<link rel="stylesheet" type="text/css" media="screen,print" href="css/styleMain.css">
+    </head>
+    <body>
+        <div id="header">
+            <br>
+            <b><font size="3" face="HGP行書体">徹底的に再現！</font></b>
+            <br>
+            <b><font size="7" face="HGP行書体">本気のTETRIS</font></b>
+        </div>
+        
+        <div id="sidebar">
+
+            <a href="index.html" class="btn btn-gradient"><span>トップ</span></a>
+
+            <p><span class="css-br"></span></p>
+
+            <div class="btn-border-gradient-wrap btn-border-gradient-wrap--gold">
+                <a href="tetris.html" class="btn btn-border-gradient"><span class="btn-text-gradient--gold">テトリスをプレイ</span></a>
+            </div>
+            
+
+            <p><span class="css-br"></span></p>
+            
+            <div class="btn-border-gradient-wrap btn-border-gradient-wrap--silver">
+                <a href="tetris.html?sound=false" class="btn btn-border-gradient"><span class="btn-text-gradient--silver">音無しでプレイ</span></a>
+            </div>
+
+            <p><span class="css-br"></span></p>
+
+            <a href="ranking.html" class="btn btn-radius-solid">あなたのランキング<i class="fas fa-angle-right fa-position-right"></i></a>
+
+            <p><span class="css-br"></span></p>
+
+            <a href="statisticalData.html" class="btn btn-radius-solid">あなたの統計<i class="fas fa-angle-right fa-position-right"></i></a>
+            
+            <p><span class="css-br"></span></p>
+
+            <a href="userGuide.html" class="btn btn-radius-solid">操作方法<i class="fas fa-angle-right fa-position-right"></i></a>
+
+            <p><span class="css-br"></span></p>
+
+            <a href="specification.html" class="btn btn-radius-solid">詳細なルール<i class="fas fa-angle-right fa-position-right"></i></a>
+
+            <p><span class="css-br"></span></p>
+
+            <p>【上級者向け】</p>
+            <a href="dasAndArr.html" class="btn btn-radius-solid">DASとARRについて<i class="fas fa-angle-right fa-position-right"></i></a>
+
+    </div>
+        
+        <div id="content">
+
+            <h2>あなたのランキング</h2>
+
+            <div class="ranking">
+                <table width = "100%" border="1">
+                    <tr><th>順位</th>
+                        <th width = "15%">点数</th>
+                        <th width = "10%">日時</th>
+                        <th>プレイ時間</th>
+                        <th>消去ライン数</th>
+                        <th>レベル</th>
+                        <th>最大コンボ</th>
+                        <th>Tetris</th>
+                        <th>Perfect Clear</th>
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-1"></td>
+                        <td id="printScore-1"></td>
+                        <td id="printDate-1"></td>
+                        <td id="printTime-1"></td>
+                        <td id="printClearLine-1"></td>
+                        <td id="printGameLevel-1"></td>
+                        <td id="printMaxCombo-1"></td>
+                        <td id="printTetris-1"></td>
+                        <td id="printPerfectClear-1"></td>                        
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-2"></td>
+                        <td id="printScore-2"></td>
+                        <td id="printDate-2"></td>
+                        <td id="printTime-2"></td>
+                        <td id="printClearLine-2"></td>
+                        <td id="printGameLevel-2"></td>
+                        <td id="printMaxCombo-2"></td>
+                        <td id="printTetris-2"></td>
+                        <td id="printPerfectClear-2"></td>    
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-3"></td>
+                        <td id="printScore-3"></td>
+                        <td id="printDate-3"></td>
+                        <td id="printTime-3"></td>
+                        <td id="printClearLine-3"></td>
+                        <td id="printGameLevel-3"></td>
+                        <td id="printMaxCombo-3"></td>
+                        <td id="printTetris-3"></td>
+                        <td id="printPerfectClear-3"></td>    
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-4"></td>
+                        <td id="printScore-4"></td>
+                        <td id="printDate-4"></td>
+                        <td id="printTime-4"></td>
+                        <td id="printClearLine-4"></td>
+                        <td id="printGameLevel-4"></td>
+                        <td id="printMaxCombo-4"></td>
+                        <td id="printTetris-4"></td>
+                        <td id="printPerfectClear-4"></td>    
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-5"></td>
+                        <td id="printScore-5"></td>
+                        <td id="printDate-5"></td>
+                        <td id="printTime-5"></td>
+                        <td id="printClearLine-5"></td>
+                        <td id="printGameLevel-5"></td>
+                        <td id="printMaxCombo-5"></td>
+                        <td id="printTetris-5"></td>
+                        <td id="printPerfectClear-5"></td>    
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-6"></td>
+                        <td id="printScore-6"></td>
+                        <td id="printDate-6"></td>
+                        <td id="printTime-6"></td>
+                        <td id="printClearLine-6"></td>
+                        <td id="printGameLevel-6"></td>
+                        <td id="printMaxCombo-6"></td>
+                        <td id="printTetris-6"></td>
+                        <td id="printPerfectClear-6"></td>    
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-7"></td>
+                        <td id="printScore-7"></td>
+                        <td id="printDate-7"></td>
+                        <td id="printTime-7"></td>
+                        <td id="printClearLine-7"></td>
+                        <td id="printGameLevel-7"></td>
+                        <td id="printMaxCombo-7"></td>
+                        <td id="printTetris-7"></td>
+                        <td id="printPerfectClear-7"></td>    
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-8"></td>
+                        <td id="printScore-8"></td>
+                        <td id="printDate-8"></td>
+                        <td id="printTime-8"></td>
+                        <td id="printClearLine-8"></td>
+                        <td id="printGameLevel-8"></td>
+                        <td id="printMaxCombo-8"></td>
+                        <td id="printTetris-8"></td>
+                        <td id="printPerfectClear-8"></td>    
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-9"></td>
+                        <td id="printScore-9"></td>
+                        <td id="printDate-9"></td>
+                        <td id="printTime-9"></td>
+                        <td id="printClearLine-9"></td>
+                        <td id="printGameLevel-9"></td>
+                        <td id="printMaxCombo-9"></td>
+                        <td id="printTetris-9"></td>
+                        <td id="printPerfectClear-9"></td>    
+                    </tr>
+
+                    <tr>
+                        <td id="printRanking-10"></td>
+                        <td id="printScore-10"></td>
+                        <td id="printDate-10"></td>
+                        <td id="printTime-10"></td>
+                        <td id="printClearLine-10"></td>
+                        <td id="printGameLevel-10"></td>
+                        <td id="printMaxCombo-10"></td>
+                        <td id="printTetris-10"></td>
+                        <td id="printPerfectClear-10"></td>    
+                    </tr>
+
+                </table>
+            </div>
+
+            <br>
+
+            <h2>さらに詳細なデータを以下から確認することができます。</h2>
+            <div class="yokonarabe">
+                <a href="detailRanking.html" class="btn btn-radius-solid">さらに詳細を確認<i class="fas fa-angle-right fa-position-right"></i></a>
+            </div>
+            
+            <br>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        
+        <a href="ranking.html" class="gotop">トップへ</a>
+
+        <script src="js/ranking.js"></script>
+
+    </body>
+</html>
